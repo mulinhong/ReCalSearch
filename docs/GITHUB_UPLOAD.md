@@ -1,23 +1,14 @@
-# Publish the reviewed ReCalSearch source repository
+# Public repository access and updates
 
-The ZIP is a GitHub-ready source tree, **not yet published**. It intentionally has no `.git` history.
-
-1. Review source, history, credit, and licensing. Only choose/add a license if you have the rights to do so. In particular, inspect `baselines/coderankllm_integration/` and all third-party dependencies.
-2. Unzip and `cd ReCalSearch` (the directory containing this README and SHA256SUMS).
-3. Create an empty GitHub repository (e.g. `ReCalSearch`). Do not generate a README in the GitHub UI if using an empty initial branch.
-4. Run the commands below, substituting **your own GitHub account**:
+The reviewed ReCalSearch package is now public at https://github.com/mulinhong/ReCalSearch. It is independent of the author's Work2 repository and accompanies the manuscript prepared for submission to the Journal of Systems and Software (JSS).
 
 ```bash
-git init
-git add .
-git commit -m "Release ReCalSearch research source and frozen results"
-git branch -M main
-git remote add origin https://github.com/YOUR_ACCOUNT/ReCalSearch.git
-git push -u origin main
+git clone https://github.com/mulinhong/ReCalSearch.git
+cd ReCalSearch
 ```
 
-Never put your GitHub token into command text, scripts, or git remote URLs. The normal git credential manager/browser authorization is preferable.
+The exact included materials and supported reproduction scope are described in [REPRODUCTION_SCOPE.md](REPRODUCTION_SCOPE.md). Complete training and inference require separately obtained inputs, checkpoints, dependencies, and path configuration. The public repository includes the paired Nomic/ReCalSearch rank arrays and CPU bootstrap implementation; the per-query inputs for the crossover and CodeRankLLM bootstrap comparisons are not bundled.
 
-`SHA256SUMS` can be checked from the repository root with `sha256sum -c SHA256SUMS` on Linux.
+`SHA256SUMS` records all tracked release files except itself. Documentation updates refresh this manifest while preserving implementation sources and frozen experimental data. `RELEASE_INFO.json` retains the hashes and provenance of the original preserved files.
 
-**Before publishing**: inspect `.gitignore`, selected `code_original_full/` files and JSON manifests for local paths and dataset disclosure; decide whether history from third-party projects is required. Some original scripts have AutoDL-specific absolute paths and need path configuration to rerun on another machine.
+Do not place credentials in scripts, commit messages, or remote URLs. Use GitHub's normal authentication flow for maintainer updates. Keep generated training outputs, local datasets, model weights, and private caches outside tracked release content.

@@ -1,5 +1,5 @@
 {
-  "status": "REVIEWED_RELEASE_CANDIDATE_NOT_PUBLISHED",
+  "status": "PUBLIC_SOURCE_AND_FROZEN_STATISTICS_RELEASE",
   "source_archive_sha256": "9abb02963ae5cf1d8271d45e9840b017cefbabf48d34a440b9679e21ad9d3395",
   "num_preserved_original_files": 217,
   "excluded_non_paper_legacy_files": 175,
@@ -222,5 +222,16 @@
     "tools/build_full_release_on_autodl.py": "4a8b39ec5cbce34faf4730b4a995be0bfec64988497052d07e611e1af2fa5c43",
     "tools/verify_release.py": "4d52adb741ff6da5a4441cc8e7907e3c0b11be20861e749740b31ec11b1f5928"
   },
-  "notes": "Review third-party licensing and source file paths before publishing."
+  "notes": "Original reviewed-package provenance and preserved-file hashes are retained. Current public reproduction coverage is described in docs/REPRODUCTION_SCOPE.md.",
+  "target_journal": "Journal of Systems and Software (JSS)",
+  "repository_url": "https://github.com/mulinhong/ReCalSearch",
+  "reproduction_scope": {
+    "self_contained_statistical_replay": "Nomic Direct versus ReCalSearch paired bootstrap from the twelve bundled six-language rank arrays",
+    "frozen_summaries_without_all_per_query_inputs": [
+      "Nomic/Jina crossover",
+      "ReCalSearch versus CodeRankLLM"
+    ],
+    "full_training_and_inference": "Requires external datasets, model weights or adapters, upstream dependencies, experiment-specific inputs, and path configuration",
+    "documentation": "docs/REPRODUCTION_SCOPE.md"
+  }
 }

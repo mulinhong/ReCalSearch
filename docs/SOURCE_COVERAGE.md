@@ -1,5 +1,7 @@
 # Source coverage and exclusions
 
+For the JSS manuscript, this repository provides implementation sources and frozen statistical materials. See [Public reproduction scope](REPRODUCTION_SCOPE.md) for the distinction between self-contained statistical replay, archived summaries, and full experiment reruns.
+
 ## Included original sources
 
 The release contains **217 preserved files before documentation** including original training/evaluation code, reviewer experiment scripts, frozen statistical results, and 12 compact TEST rank arrays. Selected paper-related files from the AutoDL `code_original_full/` directory are included without editing their bytes; excluded branches relate to separate exploratory projects and a malformed historical script.
@@ -21,7 +23,7 @@ Frozen result pointers:
 
 ## Not supplied
 
-The package does **not** include model weights, adapters, original CodeSearchNet/CoSQA raw data, all candidate pools, all 2×2 per-query rank arrays, CodeRankLLM per-query reranking outputs, or upstream llm-reranker runtime. The frozen results provide verifiable published *summary data*, while the single self-contained bundled statistical replay uses the 12 Nomic-vs-ReCalSearch ranks.
+The package does **not** include model weights, adapters, original CodeSearchNet/CoSQA raw data, all candidate pools, all 2×2 per-query rank arrays, CodeRankLLM per-query reranking outputs, or upstream llm-reranker runtime. The frozen results provide archived experiment *summary data*, while the single self-contained bundled statistical replay uses the 12 Nomic-vs-ReCalSearch ranks.
 
 Full training/inference scripts assume the historical AutoDL folder layout and exact checkpoint versions, which require separate environment configuration for another user's machine. Therefore do not describe the repository as an end-to-end reproducibility guarantee.
 

@@ -1,5 +1,7 @@
 # Release verification — 2026-11-06
 
+The checks below are retained from the reviewed source package. The JSS/public-scope documentation update did not rerun experiments or add missing per-query inputs. Current release coverage is described in [REPRODUCTION_SCOPE.md](REPRODUCTION_SCOPE.md).
+
 - Source: author-uploaded `ReCalSearch_GitHub_Source_and_Experiments.zip`, SHA256 `9abb02963ae5cf1d8271d45e9840b017cefbabf48d34a440b9679e21ad9d3395`.
 - Original source collector: **398 files**, `SHA256SUMS` **397/397 PASS**, no zip path traversal, no symbolic links.
 - Source collector issue: one historical file, `code_original_full/finetune_cosqa.py`, has pre-existing IndentationError at line 76; `code_original_full/run_experiments.sh` has DOS-CRLF shell syntax issues. These have not been edited; both are excluded from reviewed release.

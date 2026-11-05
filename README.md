@@ -1,6 +1,8 @@
 # ReCalSearch — Retriever-Aligned Code LLM Verification for Cost-Aware Neural Code Search
 
-This repository contains original Work1 source files and frozen statistics associated with the ReCalSearch IST manuscript. It is a **source-and-evidence release**, not a single-command, end-to-end reproduction image. No model weights, raw CodeSearchNet/CoSQA datasets, original ranking caches for all experiments, or upstream CodeRankLLM repository are bundled.
+This public repository accompanies the ReCalSearch manuscript prepared for submission to the **Journal of Systems and Software (JSS)**. It provides implementation sources, experiment scripts, frozen statistical summaries, and six-language paired Nomic/ReCalSearch rank arrays.
+
+The release supports self-contained CPU statistical replay of the Nomic--ReCalSearch paired bootstrap confidence intervals. Full training and inference reruns require external datasets, model weights or adapters, upstream dependencies, experiment-specific inputs, and path configuration. The public package does not contain the per-query inputs needed to recompute the crossover or CodeRankLLM bootstrap intervals. See [Reproduction scope](docs/REPRODUCTION_SCOPE.md) for the exact coverage.
 
 ## Start here
 
@@ -17,7 +19,7 @@ This repository contains original Work1 source files and frozen statistics assoc
 | `results/` | Numerical paper summary (not original raw inference traces for all experiments) |
 | `metadata/` | A *current* environment snapshot, not a precise lock of all historical runs |
 
-## Verified results represented in the repository
+## Frozen results from the original experiments
 
 - **CodeRankLLM baseline:** 100,529 aligned TEST queries; ReCalSearch macro MRR 62.4464% vs CodeRankLLM 60.0006%, paired bootstrap Δ +2.4458 percentage points, 95% CI [2.2533, 2.6448] (10,000 replicates).
 - **Four-source negative mining:** Random 60.6307±0.0984, BM25 59.9958±0.1928, Jina 62.4920±0.0729, Nomic 62.5010±0.0343 macro MRR across three training seeds in the same frozen Nomic pool protocol.
@@ -45,6 +47,6 @@ The full AutoDL collection also contained experimental Work2 integration, Safe-S
 
 ## Third-party rights and publication
 
-The CodeRankLLM integration invokes upstream code from a **separate dependency checkout**; upstream model weights and code are not included here. Check authorship, third-party license terms, and data redistribution requirements before making this repository public. This archive deliberately contains **no LICENSE file** because licensing rights have not been established by the packaging process.
+The CodeRankLLM integration invokes upstream code from a **separate dependency checkout**; upstream model weights and code are not included here. The repository contains **no LICENSE file**. Reuse and redistribution must account for the relevant authorship, third-party license terms, and data permissions.
 
-This package has not been pushed to GitHub automatically. See [`docs/GITHUB_UPLOAD.md`](docs/GITHUB_UPLOAD.md).
+The repository is publicly available at [github.com/mulinhong/ReCalSearch](https://github.com/mulinhong/ReCalSearch). See [repository access and updates](docs/GITHUB_UPLOAD.md).
