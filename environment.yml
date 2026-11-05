@@ -1,0 +1,10 @@
+# Create only the base Python environment; install a matching torch build
+# using the official PyTorch CUDA/CPU instructions BEFORE requirements.txt.
+# This is not a CUDA-locked conda specification.
+name: recal-search
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - git

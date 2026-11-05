@@ -233,5 +233,15 @@
     ],
     "full_training_and_inference": "Requires external datasets, model weights or adapters, upstream dependencies, experiment-specific inputs, and path configuration",
     "documentation": "docs/REPRODUCTION_SCOPE.md"
+  },
+  "environment_addon": {
+    "archive": "ReCalSearch_Environment_Addon_20261106.zip",
+    "archive_sha256": "5d1c5c5e57f962004d5a3ff5b09990b289d028bafda1956144ef67b2584377ec",
+    "installation_guide": "docs/ENVIRONMENT.md",
+    "portable_profile": "requirements.txt",
+    "observed_current_snapshot": "requirements-work1-snapshot.txt",
+    "conda_base": "environment.yml",
+    "upstream_coderankllm_environment": "separate from the ReCalSearch verifier environment",
+    "scope": "Environment metadata and inspection utilities; no experiment reruns or installation performed during this update"
   }
 }

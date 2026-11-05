@@ -17,7 +17,7 @@ The public release provides implementation sources, experiment scripts, frozen s
 | ReCalSearch versus CodeRankLLM | Integration wrappers, statistical scripts, and frozen 10,000-resample summary | Summary inspection; per-query reranking outputs and upstream runtime are separate dependencies |
 | Full retrieval, verifier training, and inference | Implementation and experiment scripts | Requires the original data, checkpoint/model versions, candidate pools or caches, dependencies, and path configuration |
 
-The repository does not distribute raw CodeSearchNet/CoSQA datasets, model weights or adapters, all ranking caches and candidate pools, or the upstream CodeRankLLM runtime. The environment metadata describes a collected environment snapshot; it does not lock every historical experiment environment.
+The repository does not distribute raw CodeSearchNet/CoSQA datasets, model weights or adapters, all ranking caches and candidate pools, or the upstream CodeRankLLM runtime. Installation profiles, current observed versions, and the separate CodeRankLLM environment are documented in [ENVIRONMENT.md](ENVIRONMENT.md). The environment metadata describes a collected environment snapshot; it does not lock every historical experiment environment. The portable GPU profile is an installation starting point and does not add the external experiment inputs omitted from this release.
 
 ## Statistical provenance
 

@@ -28,6 +28,15 @@ The release supports self-contained CPU statistical replay of the Nomic--ReCalSe
 
 The main verifier (LoRA r=16, alpha=32) and separate four-source controls (r=8, alpha=16) are different training configurations; comparisons within the four-source control use a common configuration. Follow the manuscript for the precise scope of each experiment.
 
+## Environment installation (added release metadata)
+
+- [`requirements.txt`](requirements.txt): proposed portable training/inference dependencies; install compatible PyTorch separately first.
+- [`requirements-work1-snapshot.txt`](requirements-work1-snapshot.txt): **recorded current Work1** non-Torch versions (not historical-run pins).
+- [`environment.yml`](environment.yml): minimal Python 3.10 Conda base (no CUDA pin).
+- [`requirements-bootstrap.txt`](requirements-bootstrap.txt): CPU-only statistics.
+- [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md): installation steps, GPU and CodeRankLLM separation, known limits.
+- [`tools/check_environment.py`](tools/check_environment.py) and [`tools/export_environment_summary.py`](tools/export_environment_summary.py): safe local environment inspection, no model execution.
+
 ## CPU statistical reproduction
 
 Install NumPy in an isolated environment, then run from repository root:

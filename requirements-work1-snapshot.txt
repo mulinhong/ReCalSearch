@@ -1,0 +1,13 @@
+# Recorded installed package versions from the Work1 CURRENT snapshot.
+# These are observations, NOT a verified historical-run lockfile.
+# Historical torch: 2.12.0.dev20260408+cu128 -- not a normal portable pip pin.
+# Python was 3.10.20. Install compatible torch separately before this file.
+# Additional dependencies without captured versions must be supplied via
+# requirements.txt; do NOT assert they were identical in all historical runs.
+transformers==5.10.2
+peft==0.19.1
+accelerate==1.13.0
+numpy==2.2.6
+tokenizers==0.22.2
+safetensors==0.7.0
+scipy==1.15.3

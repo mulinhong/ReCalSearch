@@ -1,0 +1,14 @@
+# ReCalSearch main training / inference environment: install GPU-appropriate torch FIRST.
+# Portable dependency ranges are a proposed installation profile, NOT an exact
+# lock for any frozen historical run. Refer to docs/ENVIRONMENT.md.
+# Python: 3.10 recommended (recorded Work1: 3.10.20).
+# PyTorch is deliberately omitted: choose a compatible CUDA / CPU wheel first.
+numpy>=1.24,<3
+scipy>=1.10,<2
+scikit-learn>=1.3,<2
+tqdm>=4.64,<5
+transformers>=4.46,<6
+peft>=0.13,<1
+accelerate>=1.0,<2
+safetensors>=0.4,<1
+sentence-transformers>=3,<6

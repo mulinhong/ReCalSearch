@@ -1,0 +1,29 @@
+{
+  "status": "ENVIRONMENT_ADDON_CREATED_NOT_INSTALLED",
+  "parent_archive": "ReCalSearch_GitHub_Reviewed_Source_20261106.zip",
+  "parent_archive_sha256": "6008bc0216dbc7e70f34b2e4f18cb62ba78b1817f26ed8055453a2608620c7ef",
+  "changed_or_added_paths": [
+    "requirements.txt",
+    "requirements-work1-snapshot.txt",
+    "environment.yml",
+    "docs/ENVIRONMENT.md",
+    "tools/check_environment.py",
+    "tools/export_environment_summary.py",
+    "README.md",
+    "docs/REPRO_NOTES.md"
+  ],
+  "observed_current_env_ref": "metadata/environment_current.json",
+  "statements": {
+    "historical_source_bytes_modified": false,
+    "frozen_rank_arrays_modified": false,
+    "gpu_training_executed": false,
+    "gpu_inference_executed": false,
+    "gpu_installation_tested": false,
+    "cpu_bootstrap_available": true
+  },
+  "source_file_hashes_preserved_except": [
+    "README.md",
+    "docs/REPRO_NOTES.md",
+    "SHA256SUMS"
+  ]
+}

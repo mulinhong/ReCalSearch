@@ -25,3 +25,7 @@ The per-query rank sources for the two 10,000-replicate studies are NOT bundled.
 Main ReCalSearch Qwen LoRA rank 16/alpha 32; four-source source-controlled experiments use rank 8/alpha 16. VALID seed variation is distinct from TEST query bootstrap. CoSQA lambda=5 is a reported sensitivity point, not an independently validated held-out optimum. Runtime comparisons have distinct measured scopes and are not an end-to-end matched-hardware speedup.
 
 No GPU inference, retraining, or full TEST evaluation is necessary for the release audit.
+
+## Environment
+
+For installable dependency profiles and recorded Work1 versions, see [ENVIRONMENT.md](ENVIRONMENT.md). `requirements.txt` is a proposed portable training profile, not a byte-accurate frozen historical lock.
