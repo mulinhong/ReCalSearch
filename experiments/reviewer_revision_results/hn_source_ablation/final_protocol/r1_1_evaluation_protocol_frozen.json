@@ -1,0 +1,87 @@
+{
+  "crossover": {
+    "candidate_pools": [
+      "nomic_top100",
+      "jina_top100"
+    ],
+    "dense_score_fusion": false,
+    "preserve_source_order_after_rank": 15,
+    "shared_hit_definition": "ground_truth_is_present_in_both_nomic_and_jina_top100",
+    "subsets": [
+      "full_query",
+      "shared_hit"
+    ],
+    "verifier_score": "logit_only",
+    "verifiers": [
+      "nomic_hn",
+      "jina_hn"
+    ],
+    "verify_k": 15
+  },
+  "if_gate_fails": "Narrow the manuscript claim according to the observed evidence; do not change retrievers, seeds, training budget, evaluation parameters, or statistical criteria post hoc.",
+  "main_source_ablation": {
+    "candidate_depth": 100,
+    "candidate_pool": "deployed_nomic_top100",
+    "fusion_alpha": 1.0,
+    "metrics": [
+      "MRR",
+      "R@1",
+      "R@5",
+      "R@10"
+    ],
+    "normalization": "zscore",
+    "report": [
+      "each_seed",
+      "mean",
+      "std",
+      "language_macro",
+      "micro"
+    ],
+    "retune_on_test": false,
+    "verify_k": 15
+  },
+  "prohibited_after_freeze": [
+    "new_retriever_model_search",
+    "new_training_seed",
+    "retuning_verify_k",
+    "retuning_normalization",
+    "retuning_fusion_alpha",
+    "changing_negative_count",
+    "changing_training_budget",
+    "changing_claim_gate_after_results"
+  ],
+  "reviewer_item": "R1-1",
+  "statistics": {
+    "bootstrap_query_resampling": "resample_queries_within_each_language_with_replacement_and_use_identical_sampled_queries_across_all_compared_conditions",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260923,
+    "bootstrap_seed_resampling": "resample_training_seeds_jointly_with_replacement",
+    "bootstrap_type": "paired_hierarchical_seed_and_query_bootstrap",
+    "confidence_interval": "percentile_95",
+    "interaction": "(V_N@N - V_J@N) - (V_N@J - V_J@J)",
+    "primary_metric": "language_macro_MRR",
+    "secondary_metric": "micro_MRR",
+    "training_seed_report": "mean_and_standard_deviation_across_13_42_87"
+  },
+  "status": "FROZEN_BEFORE_ANY_R1_1_EVALUATION_RESULTS",
+  "strong_claim_gate": {
+    "condition_1": "On Nomic pool, V_N > V_J",
+    "condition_2": "On Jina pool, V_J > V_N",
+    "condition_3": "The same crossover direction holds on the shared-hit subset",
+    "condition_4": "The 95% CI of the retriever-by-HN-source interaction excludes zero",
+    "rule": "All four conditions are required for the strong retriever-aligned hard-negative claim"
+  },
+  "training_audit_file": "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_12model_global_audit.json",
+  "training_audit_sha256": "fc962c960ed3be23ee2686902cd4b7c2e6cda2d45ce700aeb84fd81a8b601e11",
+  "training_seeds": [
+    13,
+    42,
+    87
+  ],
+  "training_sources": [
+    "random",
+    "bm25",
+    "jina",
+    "nomic"
+  ]
+}

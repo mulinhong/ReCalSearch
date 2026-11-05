@@ -1,0 +1,30 @@
+{
+  "config": {
+    "candidate_top_k": 100,
+    "fusion_weight": 1.0,
+    "normalization": "zscore",
+    "verifier_mode": "yesno",
+    "verify_top_k": 15
+  },
+  "created_at_utc": "2026-09-12T16:04:10.745442+00:00",
+  "method": "recal_llm_verifier",
+  "schema_version": 1,
+  "selected_metric": "equal_language_macro_mrr",
+  "selected_on_split": "valid",
+  "selection_protocol": "validation_only_then_test_once",
+  "validation_result": {
+    "exact_best_tie_count": 1,
+    "grid_size": 54,
+    "macro_mrr_exact": 64.51190227018698,
+    "micro_mrr_exact": 61.550556737173366,
+    "n_queries": 89154,
+    "per_language_mrr": {
+      "go": 80.08759380734153,
+      "java": 58.80052518248958,
+      "javascript": 57.741180016963334,
+      "php": 45.645885819141704,
+      "python": 69.94477111068333,
+      "ruby": 74.85145768450239
+    }
+  }
+}

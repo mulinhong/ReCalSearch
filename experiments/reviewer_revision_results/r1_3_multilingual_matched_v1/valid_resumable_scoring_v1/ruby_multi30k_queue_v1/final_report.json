@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "job_id": "multi30k_seed13_ruby",
+      "mrr_percent_exact": 74.47967803816411,
+      "ranks_sha256": "93ef9c6ce4196e0aef8d40a58e5857de49bb046ab2deb8624da4d64bfcbabc70",
+      "result_sha256": "34f5915f97e20ab1cf3c554dd9f2acaa9ea733b4763891318302766b661307a9",
+      "scores_sha256": "56c3e2470d3af2b7ccb66b00db1918232462551f8a89016cd4908df0c3cf7554"
+    },
+    {
+      "job_id": "multi30k_seed42_ruby",
+      "mrr_percent_exact": 74.49489017877237,
+      "ranks_sha256": "9a839a01056080bc1d4e8ef1f85c61ddcf9f7922d4f71daf2ff9902e1f32424a",
+      "result_sha256": "cbdfcb37a1ddf6cc16d64d9133f49e462ebfe3797ee37ffd5c62095f140b4fc7",
+      "scores_sha256": "64d4a8b30d1dd5d91c6fd54a8ba1b3d011da67d5d01c3b46b2cd8788c5d56775"
+    },
+    {
+      "job_id": "multi30k_seed87_ruby",
+      "mrr_percent_exact": 74.61522907231179,
+      "ranks_sha256": "4c4605739395901bb7aac37d5ac617e6428cbe751cab2e5d7aaa7058298d5a10",
+      "result_sha256": "502a269c2cff3c79508b41a8887d591e967e56fe77970d190285874b5b5ded83",
+      "scores_sha256": "c1ea2235114eb962c2ca50ef8d955ee6e3158a27c3a6d8252fc90d7c563bfc04"
+    }
+  ],
+  "plan_sha256": "5d6d038e86e2cca490ceb9fe9f9c4ffcbec95be6f5cd74527ff63da3110fd1fb",
+  "status": "PASS",
+  "test_accessed": false,
+  "worker_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b"
+}

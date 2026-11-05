@@ -1,0 +1,106 @@
+{
+  "artifact": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/eval_results_reconstructed_from_sealed_ranks.json",
+  "artifact_sha256": "2098e93b03b1f8594e8086a73e371ae3a525c7613b2c00703957b1bea13cf885",
+  "purpose": "Close the Nomic seed13 artifact gap without rerunning training or inference.",
+  "scientific_change": false,
+  "new_inference": false,
+  "new_training": false,
+  "reconstructed_macro_mrr": 62.46150182864949,
+  "reconstructed_micro_mrr": 59.56615978958874,
+  "expected_macro_mrr": 62.461501828649,
+  "expected_micro_mrr": 59.566159789589,
+  "rank_artifacts": {
+    "ruby": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "3334fe653c5d9e71b3fb93ab9e54cc80103a605dda8a3b566406e169c51db4b0",
+      "shape": [
+        2279
+      ]
+    },
+    "javascript": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "c5d8ccd7443bb470cf81b2a6207e5467efe7b201ca30766c5b61420c7e4dabcb",
+      "shape": [
+        6483
+      ]
+    },
+    "php": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "09ce2dcc61b57c1b736d637e0ef78cb6fab04ecbe1ba159db624051d872cf28a",
+      "shape": [
+        28391
+      ]
+    },
+    "python": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "9e4bdab7f025a9e55c93b73d0dc995ca6c3685b51c58f5b16b615779575a6d60",
+      "shape": [
+        22176
+      ]
+    },
+    "java": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "647742afa3bc8bf1bf74953cc0ce3d13d13be45ee123113dbbce079e0e06c3bd",
+      "shape": [
+        26909
+      ]
+    },
+    "go": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+      "sha256": "5ef54f63b8a6bf2f1a2ea682d59212416e6723458c87731ad85dfcfb32707d9c",
+      "shape": [
+        14291
+      ]
+    }
+  },
+  "score_artifacts": {
+    "ruby": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_1fc9995524.scores.npy",
+      "sha256": "3af4c42fefbba0ef1f248579511a465bd57937e7fa5b70c377e45ffbfd03e948",
+      "shape": [
+        2279,
+        15
+      ]
+    },
+    "javascript": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_37f6a7d4ee.scores.npy",
+      "sha256": "f6d23342bdd5d552bd48e5bcec56e0c64755b54dcd09f04451472f249a8ee8f2",
+      "shape": [
+        6483,
+        15
+      ]
+    },
+    "php": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_e76875390f.scores.npy",
+      "sha256": "02e77746190027e8f4b5573b647dd122693d70dcd1341ede1cef10bd0b6f647a",
+      "shape": [
+        28391,
+        15
+      ]
+    },
+    "python": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_c64290d98f.scores.npy",
+      "sha256": "eaf9d26799729276677e20c1c4873ddbfdb54d481c56f4f77968a1d77fde7545",
+      "shape": [
+        22176,
+        15
+      ]
+    },
+    "java": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_97526809a7.scores.npy",
+      "sha256": "38d11c8ec36e69a180e945490c5b6d65bd2f1099e1aa88130f76c812472d9ddc",
+      "shape": [
+        26909,
+        15
+      ]
+    },
+    "go": {
+      "path": "results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_87b9b96085.scores.npy",
+      "sha256": "476d109c50dee4407ceb97363027be46762a31f3da6ee700b8f15bf9e3850902",
+      "shape": [
+        14291,
+        15
+      ]
+    }
+  }
+}

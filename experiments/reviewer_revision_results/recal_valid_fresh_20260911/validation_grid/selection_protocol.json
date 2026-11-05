@@ -1,0 +1,31 @@
+{
+  "selection_split": "valid",
+  "selection_metric": "equal_language_macro_mrr",
+  "selection_metric_precision": "unrounded_per_query_ranks",
+  "verify_top_k": [
+    5,
+    10,
+    15
+  ],
+  "normalization": [
+    "none",
+    "minmax",
+    "zscore"
+  ],
+  "fusion_weight": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    5.0
+  ],
+  "n_configurations": 54,
+  "test_metrics_used_for_selection": false,
+  "tie_breaker": [
+    "maximize exact macro MRR",
+    "exact tie: smaller verify_top_k",
+    "then none < minmax < zscore",
+    "then smaller fusion_weight"
+  ]
+}

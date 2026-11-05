@@ -1,0 +1,1401 @@
+{
+  "artifact_type": "r1_1_nomic_side_verifier_only_replay_v1",
+  "reviewer_item": "R1-1",
+  "scientific_role": "Nomic-pool half of the frozen Nomic/Jina crossover.",
+  "protocol": {
+    "candidate_pool": "Nomic TEST top100",
+    "verifier_sources": [
+      "Nomic-HN",
+      "Jina-HN"
+    ],
+    "seeds": [
+      13,
+      42,
+      87
+    ],
+    "languages": [
+      "ruby",
+      "javascript",
+      "php",
+      "python",
+      "java",
+      "go"
+    ],
+    "candidate_top_k": 100,
+    "verify_top_k": 15,
+    "ranking_score": "verifier_logit_difference_only",
+    "dense_fusion": false,
+    "no_new_verifier_inference": true,
+    "alpha1_replay_required": true
+  },
+  "records": [
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.564282580078982,
+        "r5": 0.7301448003510311,
+        "r10": 0.7898200965335673,
+        "mrr": 0.6406958958447295
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_1fc9995524.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "3af4c42fefbba0ef1f248579511a465bd57937e7fa5b70c377e45ffbfd03e948",
+        "sealed_alpha1_rank": "3334fe653c5d9e71b3fb93ab9e54cc80103a605dda8a3b566406e169c51db4b0",
+        "verifier_only_rank": "9c37fc6ddd681fc2915b187fb87df0cbcd730afed6b0d3574d200918ef1aa60b"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.4707697053833102,
+        "r5": 0.668826160728058,
+        "r10": 0.7211167669288909,
+        "mrr": 0.55924455283701
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_37f6a7d4ee.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "f6d23342bdd5d552bd48e5bcec56e0c64755b54dcd09f04451472f249a8ee8f2",
+        "sealed_alpha1_rank": "c5d8ccd7443bb470cf81b2a6207e5467efe7b201ca30766c5b61420c7e4dabcb",
+        "verifier_only_rank": "7d87a694f66d38edb261ec79ba23366a3d24139bff676d2346e54043abe2bfdb"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.3137261808319538,
+        "r5": 0.5032580747419957,
+        "r10": 0.5703920256419288,
+        "mrr": 0.40148578964457704
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_e76875390f.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "02e77746190027e8f4b5573b647dd122693d70dcd1341ede1cef10bd0b6f647a",
+        "sealed_alpha1_rank": "09ce2dcc61b57c1b736d637e0ef78cb6fab04ecbe1ba159db624051d872cf28a",
+        "verifier_only_rank": "930763700e93a57e18547f7541c8918c8d33de6800f346c1bf7344b39ed44eb4"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.586489898989899,
+        "r5": 0.7908098845598845,
+        "r10": 0.8435245310245311,
+        "mrr": 0.6781148456917089
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_c64290d98f.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "eaf9d26799729276677e20c1c4873ddbfdb54d481c56f4f77968a1d77fde7545",
+        "sealed_alpha1_rank": "9e4bdab7f025a9e55c93b73d0dc995ca6c3685b51c58f5b16b615779575a6d60",
+        "verifier_only_rank": "f45a8cad1c5ded1b0083d32301518104ce2cb6fbca7b64df006c1f5517d65795"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.4729272734029507,
+        "r5": 0.6694042885280018,
+        "r10": 0.7238098777360734,
+        "mrr": 0.5613211446456607
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_97526809a7.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "38d11c8ec36e69a180e945490c5b6d65bd2f1099e1aa88130f76c812472d9ddc",
+        "sealed_alpha1_rank": "647742afa3bc8bf1bf74953cc0ce3d13d13be45ee123113dbbce079e0e06c3bd",
+        "verifier_only_rank": "e0022eb12234071ac1163345c324ddc03d5575400acba08a7c6373de7c3bee77"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 13,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.6419424812819257,
+        "r5": 0.7741235742775173,
+        "r10": 0.8026730109859352,
+        "mrr": 0.701095803699662
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed13_cand100_verify15_87b9b96085.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed13/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "476d109c50dee4407ceb97363027be46762a31f3da6ee700b8f15bf9e3850902",
+        "sealed_alpha1_rank": "5ef54f63b8a6bf2f1a2ea682d59212416e6723458c87731ad85dfcfb32707d9c",
+        "verifier_only_rank": "c5bd9cbf6c328cbb18f4f5bb6fcc42eeacd085f7cc2e30abc634016b39a0952d"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.5568231680561649,
+        "r5": 0.7310223782360684,
+        "r10": 0.7898200965335673,
+        "mrr": 0.6374393539857305
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_c3939e78d9.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "63231c794d0ced9d2e761b24336cb7f3a5ebf4f5a6ebe39c09785ebec7f38bda",
+        "sealed_alpha1_rank": "64f2362473cdc7d2528cc861cf7dff7db5a02aaf6803224c4d6209d5565c2edd",
+        "verifier_only_rank": "cfa41d18720bbe3cc0cabec45ac601d5bbfa598d0db83f290be68b30eed18d55"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.4701527070800555,
+        "r5": 0.6620391793922566,
+        "r10": 0.717877525836804,
+        "mrr": 0.5579699734735829
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_1f2d147156.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "2e99083fc4954b533c4970b00a2a36096cea058b72d1e4302eeb5b43ae094bf1",
+        "sealed_alpha1_rank": "9f55053d09e79e03b51b26c625cc553a95526c2cde5df55aa915e7b56d2689e9",
+        "verifier_only_rank": "7a7e8af27d13e4f71b5b290971bdcdcf49a0e41dd2693b570c393336ea3389c6"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.3101687154379909,
+        "r5": 0.49938360748124405,
+        "r10": 0.5708499172272904,
+        "mrr": 0.39851016680702606
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_5fa50a4313.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "d76a07b9d8ab2a403aaa0cfd7161f4548be5a476baea4dd776a51fb423db1b03",
+        "sealed_alpha1_rank": "2d5a90b591552c5ca38dcce9db49739ca925c3716c627062a5741fb04c6588db",
+        "verifier_only_rank": "ccdda4b9118dda73fd6ca14ebd4430ad8a3fcb94536fd285f23694145d22bc14"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.586038961038961,
+        "r5": 0.78873556998557,
+        "r10": 0.8434794372294372,
+        "mrr": 0.6775307890707203
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_69201cd3a4.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "bda5d65c0c478f1e6210b9ba7f36e087470165b4bf5b5f3962a69cf6589fe64b",
+        "sealed_alpha1_rank": "fa787c7da5c9453e71d63e1f9be529ac13bf609e99a7a2f32309f3cd9efec257",
+        "verifier_only_rank": "bf91b07ffeb4c74b779f18b3a84939ed69cce1e129f0fa019fecd68f3b75ff87"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.4709205098665874,
+        "r5": 0.6676204987179011,
+        "r10": 0.7228436582556023,
+        "mrr": 0.5596670398346196
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_4c220e270f.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "7466aa7a14466a8c0bbe17e108d6a4866da3f83c669caca3adaf848215a9b521",
+        "sealed_alpha1_rank": "5c744449831b5ee1bffb18f2a789ec3b8402ad2e11c815fb86d5410e063835db",
+        "verifier_only_rank": "2c35b0a41175f0d36b673c045a13652cca1c06457d97316a010e295fe65bb9de"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 42,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.6380939052550556,
+        "r5": 0.7703449723602267,
+        "r10": 0.8017633475614023,
+        "mrr": 0.6980456913709825
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed42_cand100_verify15_783b85b983.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed42/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "5b7a53aba3858739ca1c4f129afdebaed47535e55c82025fec2c2443c3dfdc4c",
+        "sealed_alpha1_rank": "fb7f76f0732b2f62df61d8d0b79c24d19c1cf13b9c0e31763274d463daa3e137",
+        "verifier_only_rank": "5577046a320c526c7d3a1bea5758e9d7cc0eb9657a9ee6fada2fa5b8d6c91a4b"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.5686704695041684,
+        "r5": 0.7292672224659938,
+        "r10": 0.7880649407634928,
+        "mrr": 0.6444377526910181
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_d8cf1b0dcd.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "1e9de7e8bba5a542cf4049c53a31bfed12746f425e2a73982aacd618f320a10c",
+        "sealed_alpha1_rank": "140bbe438ee081d7a056f654be100d017a033c6756cef33c9af2ed26d30ad9bd",
+        "verifier_only_rank": "c7952b78057af12d1769d88a10451c3603f22b140887ae7abd144ca09cd06d90"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.4679932130186642,
+        "r5": 0.669288909455499,
+        "r10": 0.7209625173530773,
+        "mrr": 0.557711589596504
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_e96c562f90.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "9c2a491647dc8f24bc23967569058a8a783e24b18e4740db3ef99a028406aa95",
+        "sealed_alpha1_rank": "3d9d7b5ed8182226d1f5b6159103fe9404c77e79c0950aab6c3d5faff0fc41c9",
+        "verifier_only_rank": "95f772b06929783479b1a95e7f6945a53dc5850c1e39a3e5eed3c2f13186a4d3"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.30365256595399953,
+        "r5": 0.499735831777676,
+        "r10": 0.5692649078933465,
+        "mrr": 0.3944581581118206
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_120c816aa5.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "61619c2adb0997ee7b2e13085c8d8e5a4397f42e7af20492fba0ee9060720685",
+        "sealed_alpha1_rank": "5ff38c830180598c8dc4d0dd22080cfc87377be28699622d6be395b7167514b6",
+        "verifier_only_rank": "783144e65a1f72f84d81f7c2ef3b4268339998e0881d99e0aaaa80e7faf19675"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.5840097402597403,
+        "r5": 0.7887806637806638,
+        "r10": 0.8430735930735931,
+        "mrr": 0.6765599465414364
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_d8702c890b.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "e3b99b9d647119839cf18c3c594319230c7ba9b2d618bb8234d863ad92b4a35d",
+        "sealed_alpha1_rank": "d551b38fcdb3d04351523922dccb3d7a99dbd293b0056c64b499cd85d08de292",
+        "verifier_only_rank": "dd5a1e322fb0e42274817c95fbee3b126c5fd7bfd88995fb2f1e9245581f9da6"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.4665353599167565,
+        "r5": 0.666579954662009,
+        "r10": 0.7219146010628414,
+        "mrr": 0.5559614951697305
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_5d2cba79b0.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "3f826f2952865e4b532d38f4ca4d36dab11b3a5365423f54e46b74dc3805f16a",
+        "sealed_alpha1_rank": "a068effc93f9df9440c9387c5306590c783fe5dc97e5af28dbb351cde92cc905",
+        "verifier_only_rank": "2b795d3a8071b7915d64a4e2d338b854747c3ba89c9ac83105bf368bce7a57a1"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_N@N",
+      "hn_source": "nomic",
+      "seed": 87,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.635994681967672,
+        "r5": 0.770694842908124,
+        "r10": 0.8025330627667763,
+        "mrr": 0.6967351529601713
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_nomic_seed87_cand100_verify15_b4ff980edf.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/nomic_seed87/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "ae602deb781c3736d275b2dababdff25b87b8604caef063eaa37a52470b0f474",
+        "sealed_alpha1_rank": "1fa244d715daa3380b21f4d17b867688456d6f6ba67f74958a605306b1eaa974",
+        "verifier_only_rank": "172fbcf1ca3deec59c0c2119712a9e7b5404cdec710f67f2fde3fd1bb6603907"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.5546292233435718,
+        "r5": 0.7358490566037735,
+        "r10": 0.7880649407634928,
+        "mrr": 0.6378079836983707
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_16531ab83f.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "715cf1ad951820cc3ee377509a36598c2c200f837f5d2da6b71c82d6b378e788",
+        "sealed_alpha1_rank": "0e102bc40bce0065f55b7295f814bd38d20a9e39129e362a905dd744d5d505b5",
+        "verifier_only_rank": "7b290a8e1ff53e0eee655505b7629d1472a43bf53f536d2bd88d14d54647cd36"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.47339194817214253,
+        "r5": 0.6671294153941076,
+        "r10": 0.7212710165047046,
+        "mrr": 0.5618487459085794
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_c85a13af04.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "d6d915f4e42f266f43762e4a3f37cb27071e6f45a3dda58fb1e53d21a8575b65",
+        "sealed_alpha1_rank": "9fe698d743141dddd1448388218f9c76ea3b9434932160b0b438cab00da4c5fe",
+        "verifier_only_rank": "c8d0e08ad23b149bf14aecee021218bcd13a81d9d10bae99e820220a80ec241d"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.2957275192842802,
+        "r5": 0.5018491775562678,
+        "r10": 0.5698284667676377,
+        "mrr": 0.3895165043069707
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_9087e3c390.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "2b68ebe68db1e76f2c4ca6b309610c1b803b849e8fdf0cea4cee7b7d013c54f9",
+        "sealed_alpha1_rank": "c5f48212dc6f2c4c00494bfda4b50dd1cc7938ee2b6ccc5198314b801fa1ba5f",
+        "verifier_only_rank": "9a52a39520121e3d93e86cef0b6ea8d8f6011c9548eff5997c746a889115e35e"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.5809884559884559,
+        "r5": 0.7943722943722944,
+        "r10": 0.8440656565656566,
+        "mrr": 0.676041385291679
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_fdea60e6dd.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "873f58b7d9325b02b2c46e8c038f5d5d0a71fafc96f8e30a8a84b3ca0d31b8e8",
+        "sealed_alpha1_rank": "e6b04b28a9831896eb1dd78c495f8a31aa81dcbb033aed025f4d12d0478197a2",
+        "verifier_only_rank": "2e43f5041f0a92e4c04c5a4979391c4aa4450931f9da84042551b32226244df4"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.465717789587127,
+        "r5": 0.6694786131034226,
+        "r10": 0.7244044743394403,
+        "mrr": 0.5569251748765817
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_bbaba3fc69.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "6c3a0a5c8ceca28c390c82746c39f01f2600cc25c18f69e89b0a08344805f9cf",
+        "sealed_alpha1_rank": "577a785435611bd0fd480144960455cd053e286620987e0dbb6c202543300bcd",
+        "verifier_only_rank": "9fc9e4683a3d09ac73655e28ca64a38eccf02bf9953b672be2a6e3acd9791d84"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 13,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.634315303337765,
+        "r5": 0.773003988524246,
+        "r10": 0.8028129592050941,
+        "mrr": 0.6967446970201666
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed13_cand100_verify15_8cf840c448.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed13/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "c8f13f0d508bfa897169b3c444eba3bb52edcb4d30f5ce4a2332d6557edf9786",
+        "sealed_alpha1_rank": "d88a3965f9dcc60d319427ad535f18c303613de83803aa815a3a89577a2ba74f",
+        "verifier_only_rank": "00a4e747bc22af04f4965b37b6bffbe448b42e75a5c1d6e7c46775ea1fc85c93"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.5537516454585344,
+        "r5": 0.735410267661255,
+        "r10": 0.7906976744186046,
+        "mrr": 0.6373886964866305
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_0395aa28ca.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "00abb7d9bc3b28caf3afd03bc006a47a023c3e6ca76b9f48b1aa9d9abc82f75c",
+        "sealed_alpha1_rank": "2eb404645c56f7947481fd22556cec6743b2737b1aca0c2f7f682f39ca9758f4",
+        "verifier_only_rank": "51a7e389ddfdf89c14565b3c3cfb9100f90bc8925e3b3b19af172efef49a73e7"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.46830171217029154,
+        "r5": 0.6662039179392256,
+        "r10": 0.7209625173530773,
+        "mrr": 0.5579851454577507
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_ff4e5bc4b9.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "97565caf62236497b2c6bd32bfe4e68ab82b8364a1c897296fac80e1263e68cf",
+        "sealed_alpha1_rank": "69bb4aea341ad546a946e98385f550b30c707fe7691c54b7e9ba0cbfdedf3d0d",
+        "verifier_only_rank": "95b9f647afb5ac19552b4c2575940d5e62506857b6af023de3a5e6b7656b7fff"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.28523123525060756,
+        "r5": 0.49462857947941247,
+        "r10": 0.5693705751822761,
+        "mrr": 0.3813130839342008
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_91354e75ab.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "e7485e3a1cf88ee6397b5b5f9d9468ec1d5d77b05304dbfefb4ce16d292058a1",
+        "sealed_alpha1_rank": "613ba3a93ad34d19390ad41db7901db569a8bf5e6c9b4a08771bb57d7897f53c",
+        "verifier_only_rank": "19bb7226771c1b44a02a82c1fe25a92bbc63208d54389e27882a0b69409c529d"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.5755772005772006,
+        "r5": 0.7901334776334776,
+        "r10": 0.8451479076479076,
+        "mrr": 0.6714473615654855
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_e4a6712ab8.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "621848e451823ce534ba74fa5e500848e475c241f72f1e43c4097e9952e883c4",
+        "sealed_alpha1_rank": "90541b7e59bfc5212f5729515ac216f97cae64adc35fac4075bddb8f1c2bc636",
+        "verifier_only_rank": "b623bf5894bdbdef53a95e4359fccb778b520fcaabbf4f2a911767eccceb8769"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.4607380430339292,
+        "r5": 0.6672860381285072,
+        "r10": 0.7235497417221004,
+        "mrr": 0.5533532307810209
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_4afaa54ccb.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "9981eb3b1deccee3da3623879e55a91f6b99444b8353c531ea0540b9df2a53a9",
+        "sealed_alpha1_rank": "ac5762ab8e861fe28d56d4d772fe51b40b6a3f95dc0cd70c39014196165d20a8",
+        "verifier_only_rank": "7d328cd5f7dbbbcc352d8b075ac85bcfbf5faba5ab2801cf2a5e7d0c7e85a540"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 42,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.6152123714225737,
+        "r5": 0.7673360856483101,
+        "r10": 0.8016233993422434,
+        "mrr": 0.6836327368681113
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed42_cand100_verify15_19ade49cd6.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed42/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "ca70f7ad444613dd7ebfad41d26322a86b67503d50baa095756d96ace751a471",
+        "sealed_alpha1_rank": "d4177a07cd71421fd6ab8dca571f049d6d34e152337163cb33a6f9a785ad67ef",
+        "verifier_only_rank": "8d9c045d7d8264b3ada2ff7eddd5270a595a4d483505844f30ce25f2a574b4d9"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "ruby",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 2279,
+        "r1": 0.5660377358490566,
+        "r5": 0.7406757349714788,
+        "r10": 0.7893813075910487,
+        "mrr": 0.6437846675381523
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/ruby_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/ruby_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_d07f976c04.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/ruby_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887",
+        "score_cache": "5db02ec251d0f854a06cd5596acd330b7617efc2ee9494c1c6e8ac9eb9783816",
+        "sealed_alpha1_rank": "d7f550a3bcf48f465975f5e0d4acc8949cfa175378882259f3ddb323027572aa",
+        "verifier_only_rank": "946d2b07371a05e15c757df4938ae022a35bad9cc2815e8861fde99d860f80af"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "javascript",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 6483,
+        "r1": 0.4629029770168132,
+        "r5": 0.6663581675150393,
+        "r10": 0.7206540182014499,
+        "mrr": 0.5543672369809806
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/javascript_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/javascript_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_17bcfd816e.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/javascript_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+        "score_cache": "db1ad5beaa609ba1d1e055b5793e1143c91686081d2d096dca9345829ff3a0b9",
+        "sealed_alpha1_rank": "523594a5b328e55db6cec6b682a713f06c325d3a82ee8442190a8457939cccb5",
+        "verifier_only_rank": "d6c148c8dff97d0bde0b71621493c09a7b5300f699151e19126b558cc68c716d"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "php",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 28391,
+        "r1": 0.28667535486597867,
+        "r5": 0.4971645944137227,
+        "r10": 0.5688774611672713,
+        "mrr": 0.38283956359107396
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/php_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/php_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_137bd1f6b6.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/php_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+        "score_cache": "e2b816eb65cfbf4c4fe0c32964cd40555726482059c6d6de3361feac33c25330",
+        "sealed_alpha1_rank": "79e95e58971bcc11a505a217ff4fdf909d2799aa41a9ec7c212c4c275985571b",
+        "verifier_only_rank": "eb3804fbde73911994800c54869832bc99cc6c6627ae12b894c5d8cf284c34a5"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "python",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 22176,
+        "r1": 0.5723304473304474,
+        "r5": 0.789411976911977,
+        "r10": 0.8446969696969697,
+        "mrr": 0.6693483527700481
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/python_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/python_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_6c525ee03c.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/python_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+        "score_cache": "fd366710329871706a4d599dc16ff801d0430a98bcc9416e03d1d55ffa5af502",
+        "sealed_alpha1_rank": "3d42ac2f4ece39aad36006c4e6f44deaad2b29c86b676d8723f635af6369c134",
+        "verifier_only_rank": "76a3a1b4d75a27bfa3f367ffca9ff4c4c98f0f114754bbcd1ff467fc643d3c4d"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "java",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 26909,
+        "r1": 0.4626704819948716,
+        "r5": 0.6685867181983723,
+        "r10": 0.7244044743394403,
+        "mrr": 0.5550009582110145
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/java_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/java_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_239335536c.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/java_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+        "score_cache": "15237437ad0160177082341ad5622d2eeb85a1f39fabd3bb3d7cbd45e461251e",
+        "sealed_alpha1_rank": "4e94c3266a86a088162c65e577b4e4e3748d282e60c72d2aca9506b5c7794032",
+        "verifier_only_rank": "b9420d6c9ecb0467efbb28473149cdaceef1fe352f103e798a4b0fa216789ef3"
+      },
+      "output_status": "written_new"
+    },
+    {
+      "condition": "V_J@N",
+      "hn_source": "jina",
+      "seed": 87,
+      "language": "go",
+      "candidate_pool": "nomic_test_top100",
+      "candidate_top_k": 100,
+      "verify_top_k": 15,
+      "ranking_score": "verifier_logit_difference_only",
+      "dense_fusion": false,
+      "positions_after_15": "preserve_nomic_retriever_order",
+      "alpha1_replay_gate": {
+        "normalization": "zscore",
+        "alpha": 1.0,
+        "exact_equal": true,
+        "mismatch_count": 0
+      },
+      "metrics": {
+        "n": 14291,
+        "r1": 0.6259184101882304,
+        "r5": 0.7701350500314883,
+        "r10": 0.8016233993422434,
+        "mrr": 0.690116523376039
+      },
+      "files": {
+        "pool": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/pools/nomic_test/go_test_nomic_top100.npz",
+        "score_cache": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/scores/go_test_trained_verifiers_reviewer_r1_1_hn_source_ablation_jina_seed87_cand100_verify15_4622ee34d6.scores.npy",
+        "sealed_alpha1_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/evaluation/nomic_pool/jina_seed87/ranks/go_test_llm_verifier_nomic_test_sealed_cand100_verify15_alpha=1.ranks.npy",
+        "verifier_only_rank": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy"
+      },
+      "sha256": {
+        "pool": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+        "score_cache": "7dbccd362351cbc08c0d50ef82e897df91aef74c87b709c841b2d23a52a55c73",
+        "sealed_alpha1_rank": "6339a758fc5f7c2daf2535ad2b188eb22689ca2fe1ed6f0942bed1308a135184",
+        "verifier_only_rank": "e9d4acb842ff2ee9c7a2773ee9f1231106829c761b276a35b8f741f71ee74821"
+      },
+      "output_status": "written_new"
+    }
+  ]
+}

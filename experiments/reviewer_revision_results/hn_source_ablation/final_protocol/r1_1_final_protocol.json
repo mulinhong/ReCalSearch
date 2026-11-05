@@ -1,0 +1,85 @@
+{
+  "format": "reviewer_r1_1_final_protocol_v1",
+  "reviewer_item": "R1-1",
+  "research_question": "Distinguish generic hard-negative benefit, lexical/dense hard-negative benefit, and evidence for deployed-retriever alignment.",
+  "negative_sources": [
+    "random",
+    "bm25",
+    "jina",
+    "nomic"
+  ],
+  "deployed_retriever": "nomic-embed-code",
+  "alternative_dense_retriever": "jina-code-embeddings-0.5b",
+  "no_further_model_shopping": true,
+  "languages": [
+    "ruby",
+    "javascript",
+    "php",
+    "python",
+    "java",
+    "go"
+  ],
+  "queries_per_language": 5000,
+  "total_queries": 30000,
+  "negatives_per_query": 7,
+  "positive_repeat": 2,
+  "examples_per_query": 9,
+  "examples_per_source": 270000,
+  "query_manifest": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/final_protocol/train_query_manifest.json",
+  "query_manifest_sha256": "fd948a05bda3d45d72bae336590b43a81f3f1ec543faaa190a746dad522ec354",
+  "rank_control": "source-relative highest-ranked 7 valid negatives",
+  "similarity_policy": "Raw similarity values are not forced to match across heterogeneous retrievers. Deployed-Nomic hardness distributions will be reported separately.",
+  "training": {
+    "base_model": "Qwen2.5-Coder-7B-Instruct",
+    "max_length": 1024,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "lr": 0.0001,
+    "epochs": 1,
+    "fp16": true,
+    "optimizer": "adamw_torch",
+    "seeds": [
+      13,
+      42,
+      87
+    ]
+  },
+  "source_ablation": {
+    "deployment_retriever": "nomic",
+    "candidate_pool": 100,
+    "verify_k": 15,
+    "normalization": "zscore",
+    "fusion_weight": 1.0
+  },
+  "crossover": {
+    "candidate_retrievers": [
+      "nomic",
+      "jina"
+    ],
+    "verifiers": [
+      "nomic_hn",
+      "jina_hn"
+    ],
+    "candidate_pool": 100,
+    "rerank_depth": 15,
+    "ranking_score": "verifier_logit_difference_only",
+    "dense_fusion": false,
+    "shared_hit_subset": "GT contained in both Nomic top100 and Jina top100",
+    "bootstrap_samples": 10000,
+    "interaction_analysis": true
+  },
+  "claim_gate": {
+    "retain_retriever_aligned_claim_only_if": "Nomic-HN beats Jina-HN on Nomic candidates; Jina-HN beats Nomic-HN on Jina candidates; the same direction holds on the shared-hit subset; and the paired-bootstrap interaction 95% CI excludes zero.",
+    "otherwise": "narrow the retriever-specific claim"
+  },
+  "test_used_for_protocol_selection": false
+}

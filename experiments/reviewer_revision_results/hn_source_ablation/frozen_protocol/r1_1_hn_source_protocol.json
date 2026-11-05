@@ -1,0 +1,43 @@
+{
+  "format": "reviewer_r1_1_hn_source_protocol_v1",
+  "reviewer_item": "R1-1",
+  "research_question": "Is the verifier gain attributable to generic hard-negative supervision, dense hard negatives, or specifically to negatives mined by the deployed Nomic retriever?",
+  "sources": [
+    "random",
+    "bm25",
+    "jina",
+    "nomic"
+  ],
+  "languages": [
+    "ruby",
+    "javascript",
+    "php",
+    "python",
+    "java",
+    "go"
+  ],
+  "queries_per_language": 5000,
+  "total_queries": 30000,
+  "positive_repeat": 2,
+  "negatives_per_query": 7,
+  "examples_per_query": 9,
+  "examples_per_source": 270000,
+  "query_manifest": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/frozen_protocol/r1_1_train_query_manifest.json",
+  "query_manifest_sha256": "2921dec3bbbe63bbdc30d5d40d82d78219e6c21d50899edcca071ee1e973c11d",
+  "negative_selection": {
+    "random": "7 valid random negatives",
+    "bm25": "top-7 valid BM25 negatives",
+    "jina": "top-7 valid Jina dense negatives",
+    "nomic": "top-7 valid Nomic dense negatives"
+  },
+  "rank_control": "source-relative highest-ranked valid negatives",
+  "raw_similarity_matching": "not forced across heterogeneous retrievers because score scales are not directly comparable and prior support-matching attempts failed; deployed-Nomic similarity distributions will be reported separately",
+  "training_seeds": [
+    13,
+    42,
+    87
+  ],
+  "training_budget": "identical across all four sources",
+  "test_used_for_source_selection": false,
+  "claim_rule": "Nomic superiority over weaker dense sources alone is not interpreted as proof of retriever-specific alignment; claims will be narrowed according to the observed source-ablation evidence."
+}

@@ -1,0 +1,53 @@
+{
+  "r1_1_training_input": {
+    "nomic": {
+      "training_examples": 270000,
+      "positive_examples": 60000,
+      "negative_examples": 210000,
+      "first7": "PASS",
+      "combined_sha256": "2240eede7a3d50bf9846562ca0eefb4b0236c8619d40c7110212e947fea16503"
+    },
+    "jina": {
+      "training_examples": 270000,
+      "positive_examples": 60000,
+      "negative_examples": 210000,
+      "first7": "PASS",
+      "combined_sha256": "24e719cafd5faad1e1e4e613801343abc0ff182dc9d0df64cc3200558d45b2bf"
+    }
+  },
+  "r1_1_gate": "PASS",
+  "r1_3_script_inventory": {
+    "train_qwen_verifier.py": {
+      "exists": true,
+      "sha256": "ec0a1307a2b1d5e2a283fa3527582b487761e388fbda26fa6a1b5b758d3e2c07"
+    },
+    "build_multilingual_control_data.py": {
+      "exists": false,
+      "sha256": null
+    },
+    "eval_llm_verifier.py": {
+      "exists": true,
+      "sha256": "a3156c285728d54180ce0da1c65255a92adfe15f583dc987e47ad8a97b8e665a"
+    },
+    "run_oldcsn_reviewer_revision.sh": {
+      "exists": false,
+      "sha256": null
+    },
+    "pool_ruby_valid": false,
+    "pool_ruby_test": true,
+    "pool_javascript_valid": false,
+    "pool_javascript_test": true,
+    "pool_php_valid": false,
+    "pool_php_test": true,
+    "pool_python_valid": false,
+    "pool_python_test": true,
+    "pool_java_valid": false,
+    "pool_java_test": true,
+    "pool_go_valid": false,
+    "pool_go_test": true
+  },
+  "r1_3_inputs_present": false,
+  "r1_3_train_protocol": "NOT_YET_FROZEN",
+  "r1_3_gpu_training_started": false,
+  "no_existing_artifact_overwrite": true
+}

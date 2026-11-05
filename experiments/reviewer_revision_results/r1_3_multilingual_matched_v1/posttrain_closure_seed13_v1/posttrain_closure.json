@@ -1,0 +1,55 @@
+{
+  "experiment": "R1-3 Multi5k seed13",
+  "source_run": "train_multi5k_seed13_v5",
+  "classification": "TRAINING_COMPLETED_POSTAUDIT_PICKLE_FAILURE",
+  "training_steps": 2813,
+  "epochs": 1,
+  "train_metrics": {
+    "train_runtime": "8811",
+    "train_samples_per_second": "5.107",
+    "train_steps_per_second": "0.319",
+    "train_loss": "0.3719",
+    "epoch": "1"
+  },
+  "training_loss": 0.3719,
+  "original_launcher_exit_code": 1,
+  "posttrain_audit": "PASS",
+  "model_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/r1_3_multilingual_matched_v1/models/multi5k_seed13_v5",
+  "model_artifacts": {
+    "adapter_config.json": {
+      "sha256": "f8bebe2bb57b113462f49a0ba7935887327c11f080aa3086acf31fc746ac07c8",
+      "size_bytes": 1081
+    },
+    "adapter_model.safetensors": {
+      "sha256": "c02e0fa78a351bff68fd63e6e28128e112a83a42850cbe47ef606168e045cc59",
+      "size_bytes": 20214760
+    },
+    "verifier_config.json": {
+      "sha256": "077338ba85f66a1e49d827289ad460075c9e1d483404ccc386566815c51ef1e1",
+      "size_bytes": 728
+    },
+    "training_args.bin": {
+      "sha256": "869f071c31b85884f0eb23976e89749ee99f9f2dd713aeedbdd5d8849eb36f64",
+      "size_bytes": 5265
+    },
+    "environment_manifest.json": {
+      "sha256": "447fc2e2c9cd58f7fa51ad5be9189881b26441a19e450f3921a026bc60f320ff",
+      "size_bytes": 1754
+    }
+  },
+  "adapter_tensors": 224,
+  "adapter_parameters": 5046272,
+  "adapter_finite": true,
+  "optimizer": "adamw_torch",
+  "data_seed": null,
+  "lr_scheduler": "linear",
+  "source_wrapper_sha256": "7febaaa29c3d1c516bfad6484d74cfcdb396e1669172664e825b38382f099f23",
+  "original_trainer_sha256": "ec0a1307a2b1d5e2a283fa3527582b487761e388fbda26fa6a1b5b758d3e2c07",
+  "training_data_sha256": "bcbd58d005cf227a52c9afed0912983340ce1b30888bd32c42643a214eb4bf3b",
+  "preflight_sha256": "b553e3125551e375d7a45d9ae0ade57a63440a14cd426b1b094071c9a6809bcc",
+  "training_log_sha256": "1933c1a5df856456e082cf7fa90f65ce87d3e8c66d9948ee7e3543e77a93f265",
+  "training_args_pickle_portability": "Requires custom class resolution",
+  "validation_evaluation_completed": false,
+  "test_evaluation_completed": false,
+  "historical_artifacts_modified": false
+}

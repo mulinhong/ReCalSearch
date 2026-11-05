@@ -1,0 +1,102 @@
+{
+  "candidate_pool": "sealed_nomic_top100",
+  "candidate_top_k": 100,
+  "fusion_alpha": 1.0,
+  "hn_source": "nomic",
+  "language_mrr": {
+    "go": {
+      "max_mrr": 72.7673276755688,
+      "mean_mrr": 72.70893102281205,
+      "min_mrr": 72.63184235447713,
+      "sample_std_mrr": 0.06964992205744792,
+      "seed13": 72.7673276755688,
+      "seed42": 72.63184235447713,
+      "seed87": 72.7276230383902
+    },
+    "java": {
+      "max_mrr": 59.26471801496665,
+      "mean_mrr": 59.25116111217195,
+      "min_mrr": 59.228511050501474,
+      "sample_std_mrr": 0.01974209266264555,
+      "seed13": 59.26471801496665,
+      "seed42": 59.26025427104771,
+      "seed87": 59.228511050501474
+    },
+    "javascript": {
+      "max_mrr": 59.16325082582833,
+      "mean_mrr": 59.08706209662403,
+      "min_mrr": 58.957923906017385,
+      "sample_std_mrr": 0.1124389616496931,
+      "seed13": 58.957923906017385,
+      "seed42": 59.14001155802637,
+      "seed87": 59.16325082582833
+    },
+    "php": {
+      "max_mrr": 43.47435671716652,
+      "mean_mrr": 43.44574564130456,
+      "min_mrr": 43.430521203199625,
+      "sample_std_mrr": 0.0247949515832157,
+      "seed13": 43.430521203199625,
+      "seed42": 43.47435671716652,
+      "seed87": 43.432359003547525
+    },
+    "python": {
+      "max_mrr": 71.3716209715692,
+      "mean_mrr": 71.34124216593786,
+      "min_mrr": 71.28410689934191,
+      "sample_std_mrr": 0.04951372902503109,
+      "seed13": 71.28410689934191,
+      "seed42": 71.36799862690248,
+      "seed87": 71.3716209715692
+    },
+    "ruby": {
+      "max_mrr": 69.23257917155206,
+      "mean_mrr": 69.1717949620184,
+      "min_mrr": 69.06441327280257,
+      "sample_std_mrr": 0.0932654073604106,
+      "seed13": 69.06441327280257,
+      "seed42": 69.23257917155206,
+      "seed87": 69.21839244170056
+    }
+  },
+  "macro_mrr": {
+    "mean": 62.50098950014481,
+    "sample_std": 0.034319468814023174,
+    "seed13": 62.46150182864949,
+    "seed42": 62.51784044986206,
+    "seed87": 62.52362622192288
+  },
+  "micro_mrr": {
+    "mean": 59.581895002232294,
+    "sample_std": 0.013833846289974926,
+    "seed13": 59.56615978958874,
+    "seed42": 59.59214538329608,
+    "seed87": 59.58737983381208
+  },
+  "n_queries": 100529,
+  "normalization": "zscore",
+  "pass": true,
+  "reviewer_item": "R1-1",
+  "scientific_interpretation_status": "Nomic-HN seed stability established; no cross-HN-source conclusion yet.",
+  "source_audits": {
+    "13": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_nomic_seed13_posteval_audit.json",
+      "sha256": "c23affbb12bd58591c1e29988497ec9cd7e22b10c38a5168349d64330404ecbc"
+    },
+    "42": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_nomic_seed42_posteval_audit.json",
+      "sha256": "f6804da3160423da05c83482eadc1bd591b6a2cf00b77a92e0e860868ca09524"
+    },
+    "87": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_nomic_seed87_posteval_audit.json",
+      "sha256": "3565dec096f5bf57731e060f5c0e7952d335720b15627d24296b77fa4c2397d3"
+    }
+  },
+  "stage": "Nomic-HN three-training-seed summary on frozen Nomic top100 candidate pool",
+  "training_seeds": [
+    13,
+    42,
+    87
+  ],
+  "verify_top_k": 15
+}

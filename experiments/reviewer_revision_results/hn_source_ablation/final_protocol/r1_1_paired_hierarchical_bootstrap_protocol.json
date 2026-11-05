@@ -1,0 +1,66 @@
+{
+  "reviewer_item": "R1-1",
+  "purpose": "Paired uncertainty analysis for the frozen four-source hard-negative ablation.",
+  "n_bootstrap": 10000,
+  "rng_seed": 20260923,
+  "sources": [
+    "random",
+    "bm25",
+    "jina",
+    "nomic"
+  ],
+  "seeds": [
+    13,
+    42,
+    87
+  ],
+  "languages": [
+    "ruby",
+    "javascript",
+    "php",
+    "python",
+    "java",
+    "go"
+  ],
+  "comparisons": [
+    {
+      "a": "nomic",
+      "b": "random",
+      "effect": "nomic minus random"
+    },
+    {
+      "a": "bm25",
+      "b": "random",
+      "effect": "bm25 minus random"
+    },
+    {
+      "a": "jina",
+      "b": "random",
+      "effect": "jina minus random"
+    },
+    {
+      "a": "nomic",
+      "b": "bm25",
+      "effect": "nomic minus bm25"
+    },
+    {
+      "a": "nomic",
+      "b": "jina",
+      "effect": "nomic minus jina"
+    }
+  ],
+  "hierarchy": {
+    "level_1": "Resample three training seeds with replacement.",
+    "level_2": "Within each language, resample test queries with replacement.",
+    "pairing": "Each bootstrap replicate uses identical seed and query resamples for all four HN sources.",
+    "query_seed_relation": "Because all seeds evaluate the identical test queries, each language's sampled query indices are shared across the resampled seeds."
+  },
+  "primary_metric": "equal-language macro MRR percentage points",
+  "secondary_metric": "pooled/micro MRR percentage points",
+  "ci": "two-sided 95% percentile bootstrap interval",
+  "effect_size": "absolute paired MRR difference in percentage points",
+  "two_sided_bootstrap_p": "2 * min(P(delta<=0), P(delta>=0)) with +1 finite-bootstrap correction",
+  "batch_size": 32,
+  "closure_json_sha256": "85c18b8a5b4a80741848f3c8eba52de73c1542da3c8217760edcf54d3af73943",
+  "closure_csv_sha256": "4b61e1f3aeac75038e56470b699f0f03d0b935c86d7c695a1426b1b8bf498342"
+}

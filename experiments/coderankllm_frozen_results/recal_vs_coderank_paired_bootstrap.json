@@ -1,0 +1,178 @@
+{
+  "protocol": "final_frozen_recal_vs_coderank_paired_bootstrap_v2",
+  "important_protocol_note": "ReCalSearch ranks are the final test ranks produced after validation-only selection over 54 configurations and freezing verify_top_k=15, normalization=zscore, and fusion_weight=1.0. The test configuration was not selected using test performance.",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260911,
+  "total_queries": 100529,
+  "per_language": {
+    "ruby": {
+      "language": "ruby",
+      "queries": 2279,
+      "recal_mrr": 0.6876589371912725,
+      "coderankllm_mrr": 0.6627421778390444,
+      "delta_mrr": 0.02491675935222794,
+      "delta_mrr_points": 2.491675935222794,
+      "ci95_low": 0.01593092035992867,
+      "ci95_high": 0.03419421515759553,
+      "ci95_low_points": 1.593092035992867,
+      "ci95_high_points": 3.4194215157595527,
+      "wins": 410,
+      "ties": 1648,
+      "losses": 221,
+      "outside_top100": 274
+    },
+    "javascript": {
+      "language": "javascript",
+      "queries": 6483,
+      "recal_mrr": 0.5913381606363096,
+      "coderankllm_mrr": 0.5658997602084317,
+      "delta_mrr": 0.02543840042787801,
+      "delta_mrr_points": 2.543840042787801,
+      "ci95_low": 0.019975362133131908,
+      "ci95_high": 0.030890631661917436,
+      "ci95_low_points": 1.9975362133131909,
+      "ci95_high_points": 3.0890631661917434,
+      "wins": 1340,
+      "ties": 4391,
+      "losses": 752,
+      "outside_top100": 1101
+    },
+    "php": {
+      "language": "php",
+      "queries": 28391,
+      "recal_mrr": 0.43472663340900214,
+      "coderankllm_mrr": 0.4113530234328496,
+      "delta_mrr": 0.02337360997615255,
+      "delta_mrr_points": 2.337360997615255,
+      "ci95_low": 0.021065388741978316,
+      "ci95_high": 0.025713960979964756,
+      "ci95_low_points": 2.1065388741978315,
+      "ci95_high_points": 2.571396097996476,
+      "wins": 6511,
+      "ties": 17936,
+      "losses": 3944,
+      "outside_top100": 7390
+    },
+    "python": {
+      "language": "python",
+      "queries": 22176,
+      "recal_mrr": 0.7133578453117376,
+      "coderankllm_mrr": 0.6843374795960268,
+      "delta_mrr": 0.029020365715710823,
+      "delta_mrr_points": 2.9020365715710823,
+      "ci95_low": 0.026030939634528204,
+      "ci95_high": 0.03192283712844785,
+      "ci95_low_points": 2.6030939634528205,
+      "ci95_high_points": 3.192283712844785,
+      "wins": 4425,
+      "ties": 15394,
+      "losses": 2357,
+      "outside_top100": 1415
+    },
+    "java": {
+      "language": "java",
+      "queries": 26909,
+      "recal_mrr": 0.5927504754488071,
+      "coderankllm_mrr": 0.5717616295707189,
+      "delta_mrr": 0.02098884587808812,
+      "delta_mrr_points": 2.098884587808812,
+      "ci95_low": 0.018572092007058894,
+      "ci95_high": 0.023387767968644477,
+      "ci95_low_points": 1.8572092007058894,
+      "ci95_high_points": 2.338776796864448,
+      "wins": 4795,
+      "ties": 19218,
+      "losses": 2896,
+      "outside_top100": 4839
+    },
+    "go": {
+      "language": "go",
+      "queries": 14291,
+      "recal_mrr": 0.7269513265113109,
+      "coderankllm_mrr": 0.7039399889306166,
+      "delta_mrr": 0.023011337580694336,
+      "delta_mrr_points": 2.3011337580694335,
+      "ci95_low": 0.02012537126064996,
+      "ci95_high": 0.025819759782085196,
+      "ci95_low_points": 2.012537126064996,
+      "ci95_high_points": 2.5819759782085194,
+      "wins": 1654,
+      "ties": 11780,
+      "losses": 857,
+      "outside_top100": 2034
+    }
+  },
+  "macro_equal_language_weight": {
+    "recal_mrr": 0.6244638964180733,
+    "coderankllm_mrr": 0.6000056765962812,
+    "delta_mrr": 0.024458219821792082,
+    "delta_mrr_points": 2.445821982179208,
+    "ci95": [
+      0.022532818039230594,
+      0.02644837440592481
+    ],
+    "ci95_points": [
+      2.2532818039230595,
+      2.644837440592481
+    ]
+  },
+  "pooled_micro": {
+    "recal_mrr": 0.5958653860183356,
+    "coderankllm_mrr": 0.5717678408862705,
+    "delta_mrr": 0.024097545132065242,
+    "delta_mrr_points": 2.4097545132065243,
+    "ci95": [
+      0.02283308919813352,
+      0.025378901415060707
+    ],
+    "ci95_points": [
+      2.283308919813352,
+      2.537890141506071
+    ],
+    "wins": 19135,
+    "ties": 70367,
+    "losses": 11027
+  },
+  "alignment": {
+    "status": "PASS",
+    "anchor": "exact equality of preserved full-codebase dense ranks for all ground truths outside Nomic top-100"
+  },
+  "input_manifest": {
+    "ruby": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/ruby_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "de3f2b6313330f5166f893bf127147eeee8acb041d439759ea17e4589dd0957d",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/ruby/ruby_coderankllm_fullranks.npy",
+      "coderank_sha256": "9bcdaeac27aa1c41e4643a844074bc2f4ba18c3487af3c1ec509751b331d5258"
+    },
+    "javascript": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/javascript_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "22300442649aa719b20b8d1494ed56ff8973899f3ccc95cd6a61e1f1d9065897",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/javascript/javascript_coderankllm_fullranks.npy",
+      "coderank_sha256": "a1f8f794b55cc79b4387018b17672a650807324c246ac05b4f004f93e00e61c1"
+    },
+    "php": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/php_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "481272e9571ab265628983fd9a78331442e76874326ab3c5d9ed22a0f23f4848",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/php/php_coderankllm_fullranks.npy",
+      "coderank_sha256": "a76b1c973b0d09b07eca9cefc9de0d99129c1be6f127fbce270181e43f13ae6e"
+    },
+    "python": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/python_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "dd0c70a65b09030e9a2b637c927ccd9f65c9d79d3ded1c4fe91802d5c188404f",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/python/python_coderankllm_fullranks.npy",
+      "coderank_sha256": "6c8f0a49026604235856f7eb8e1ad4998d87791bba7fdd5c54dabd68edc7b258"
+    },
+    "java": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/java_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "bf50aba6d22338d23d50ce66180892ac0a3ac5a33f75d78212c7bd67eeaa60c1",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/java/java_coderankllm_fullranks.npy",
+      "coderank_sha256": "4aef29922abae76e10dc86a2a31919b81ad6d9866a593a7089d4b608fbc5d6a2"
+    },
+    "go": {
+      "recal_path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/recal_valid_fresh_20260911/frozen_test/ranks/go_test_llm_verifier_dense_cand100_verify15_alpha=1.ranks.npy",
+      "recal_sha256": "78a85a6ee79e4433706faac88b26e4f5b5bf842e5c67e33f1b2bafb087b75a7d",
+      "coderank_path": "/root/autodl-tmp/cornstack-official/runs_coderankllm_full/go/go_coderankllm_fullranks.npy",
+      "coderank_sha256": "965cb626d8c21bb350fd8e0a85fc78bc50f4aa941db73850c03e9104a6ae2d85"
+    }
+  }
+}

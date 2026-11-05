@@ -1,0 +1,6 @@
+{
+  "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_paired_hierarchical_bootstrap_protocol.json": "9c24fe2a5a2070078ef0bda98c2f14c4bb0d31e6a6bc2a47a7a83a5794ba2eb8",
+  "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_paired_hierarchical_bootstrap_10000.npz": "003cb851156525b4bce8238e755d5fd8dd6315c5549913ed77ea5274f3af420c",
+  "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_paired_hierarchical_bootstrap_summary.json": "6afd6e38a256ed6b77775797ba973a9107c8b6c688650b19b5d87b28cba9b320",
+  "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_paired_hierarchical_bootstrap_summary.csv": "f2f2c8fd198cb70eb5804b2b1041539bb9b246beea08f050c1f0aecf86f45b1b"
+}

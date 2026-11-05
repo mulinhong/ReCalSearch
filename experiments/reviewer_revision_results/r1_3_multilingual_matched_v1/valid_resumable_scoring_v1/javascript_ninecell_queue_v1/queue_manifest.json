@@ -1,0 +1,23 @@
+{
+  "batch_size": 1,
+  "candidate_top_k": 100,
+  "jobs": [
+    "mono5k_seed13_javascript",
+    "multi5k_seed13_javascript",
+    "multi30k_seed13_javascript",
+    "mono5k_seed42_javascript",
+    "multi5k_seed42_javascript",
+    "multi30k_seed42_javascript",
+    "mono5k_seed87_javascript",
+    "multi5k_seed87_javascript",
+    "multi30k_seed87_javascript"
+  ],
+  "language": "javascript",
+  "n_queries_each": 8253,
+  "plan_sha256": "5d6d038e86e2cca490ceb9fe9f9c4ffcbec95be6f5cd74527ff63da3110fd1fb",
+  "pool_sha256": "03b781900ae5a28820068392fcbd7ee0bc37f11b841d077ef18286b644f3446d",
+  "split": "valid",
+  "test_accessed": false,
+  "verify_top_k": 15,
+  "work_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b"
+}

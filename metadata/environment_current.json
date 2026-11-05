@@ -1,0 +1,15 @@
+{
+  "python_executable": "/root/autodl-tmp/work1_isolated/env/lora/bin/python",
+  "python_version": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "current_packages": {
+    "torch": "2.12.0.dev20260408+cu128",
+    "transformers": "5.10.2",
+    "peft": "0.19.1",
+    "accelerate": "1.13.0",
+    "numpy": "2.2.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.7.0",
+    "scipy": "1.15.3"
+  },
+  "note": "CURRENT ENVIRONMENT; historical run versions require historical manifests"
+}

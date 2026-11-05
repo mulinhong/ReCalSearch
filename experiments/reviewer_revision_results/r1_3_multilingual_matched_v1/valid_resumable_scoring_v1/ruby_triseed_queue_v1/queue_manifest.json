@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    "mono5k_seed42_ruby",
+    "multi5k_seed42_ruby",
+    "mono5k_seed87_ruby",
+    "multi5k_seed87_ruby"
+  ],
+  "worker_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b",
+  "plan_sha256": "5d6d038e86e2cca490ceb9fe9f9c4ffcbec95be6f5cd74527ff63da3110fd1fb",
+  "split": "valid",
+  "max_new_chunks": 0,
+  "scoring_algorithm": "frozen_original_batch1",
+  "test_accessed": false
+}

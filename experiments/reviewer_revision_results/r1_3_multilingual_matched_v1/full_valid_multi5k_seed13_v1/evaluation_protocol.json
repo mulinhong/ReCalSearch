@@ -1,0 +1,52 @@
+{
+  "experiment": "r1_3_multi5k_seed13_full_valid",
+  "split": "valid",
+  "languages": [
+    "ruby",
+    "javascript",
+    "php",
+    "python",
+    "java",
+    "go"
+  ],
+  "query_counts": {
+    "ruby": 2209,
+    "javascript": 8253,
+    "php": 26015,
+    "python": 23107,
+    "java": 15328,
+    "go": 14242
+  },
+  "total_queries": 89154,
+  "candidate_top_k": 100,
+  "verify_top_k": 15,
+  "normalization": "zscore",
+  "fusion_alpha": 1.0,
+  "verifier_mode": "yesno",
+  "max_length": 1024,
+  "max_query_chars": 512,
+  "max_code_chars": 3000,
+  "batch_size": 1,
+  "model_adapter_sha256": "c02e0fa78a351bff68fd63e6e28128e112a83a42850cbe47ef606168e045cc59",
+  "evaluator_sha256": "08692a72ab8b6e46a1ce99f83d762cea02a933db4bd7cb54840c5877d59163bb",
+  "source_evaluator_sha256": "a3156c285728d54180ce0da1c65255a92adfe15f583dc987e47ad8a97b8e665a",
+  "canonical_valid_pool_hashes": {
+    "ruby": "ba08fb0199bce7342c9580d9445bbcb2456368597a83c601d4fdbf693a3606c0",
+    "javascript": "94307b94903b45c5ed2c5b0afa465a626784b674006152b96b473bb7a495ddd9",
+    "php": "a56fd260eac33ffb0dfe25d10c49b612cc8dde81d44c84eee0aa4c5ed1abdcd6",
+    "python": "06fde1e16cbe8735eeabf2fade16e8eea59f0854aebf1c9f33baf22bee4dfc49",
+    "java": "99dae900d8ab271aa7237979ad5c244efda16f7449eb97f5425309fa03178e02",
+    "go": "a12c5df481af3fa18620b0861f87fcfaedc3b69429249ea1e170e12b4e443565"
+  },
+  "converted_valid_pool_hashes": {
+    "ruby": "fc60c7012e7c2019f034e8d46171aa3220cf20c9e7c5afc3728aa56efa5c85ba",
+    "javascript": "03b781900ae5a28820068392fcbd7ee0bc37f11b841d077ef18286b644f3446d",
+    "php": "95b78c4e8ac688c22632b18011b496dcdfa8f1622f656e3868badb73e6945a8c",
+    "python": "2ff29339c22c1c57bcab9e59d6e6eadf385c80baae335c78dd18f6a3909e1c43",
+    "java": "b4329683443cdb75ff2b52ea23d09edb5bc0165ba290dd5e9e3b9ca7daae0f14",
+    "go": "0bc7dab8f60d1867601dc63ac5817719d1fe5cb33610590393baef0daa7d0a1d"
+  },
+  "validation_only": true,
+  "test_metrics_permitted": false,
+  "training_or_test_started": false
+}

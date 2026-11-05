@@ -1,0 +1,173 @@
+{
+  "protocol": "reviewer_r1_1_hn_source_isolation_v1",
+  "status": "FROZEN_BEFORE_RESULTS",
+  "question": "Does hard-negative source affect verifier performance under a fixed verifier training protocol?",
+  "sources": [
+    "random",
+    "bm25",
+    "jina",
+    "nomic"
+  ],
+  "seeds": [
+    13,
+    42,
+    87
+  ],
+  "num_runs": 12,
+  "training_data": {
+    "random": {
+      "path": "results/reviewer_revision/hn_source_ablation/qwen_data/combined_random_hn7_30k.jsonl",
+      "sha256": "f280566788339d952037889af7122406f1b98a4171e1416545e840d53605bd5a"
+    },
+    "bm25": {
+      "path": "results/reviewer_revision/hn_source_ablation/qwen_data/combined_bm25_hn7_30k.jsonl",
+      "sha256": "fb21b429c7190b2f5527fd50d22cc3c93159faa33e431f8ab5eb8f0ba149b636"
+    },
+    "jina": {
+      "path": "results/reviewer_revision/hn_source_ablation/qwen_data/combined_jina_hn7_30k.jsonl",
+      "sha256": "24e719cafd5faad1e1e4e613801343abc0ff182dc9d0df64cc3200558d45b2bf"
+    },
+    "nomic": {
+      "path": "results/reviewer_revision/hn_source_ablation/qwen_data/combined_nomic_hn7_30k.jsonl",
+      "sha256": "2240eede7a3d50bf9846562ca0eefb4b0236c8619d40c7110212e947fea16503"
+    }
+  },
+  "train_script": {
+    "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/train_qwen_verifier.py",
+    "sha256": "ec0a1307a2b1d5e2a283fa3527582b487761e388fbda26fa6a1b5b758d3e2c07"
+  },
+  "training_protocol": {
+    "base_model": "/root/autodl-tmp/hf_models/Qwen2.5-Coder-7B-Instruct",
+    "loss": "causal_lm_yes_no_completion",
+    "examples_per_source": 270000,
+    "queries_per_source": 30000,
+    "epochs": 1.0,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "learning_rate": 0.0001,
+    "warmup_ratio": 0.03,
+    "optimizer": "adamw_torch",
+    "lr_scheduler": "linear",
+    "weight_decay": 0.0,
+    "dtype": "float16",
+    "trainable_dtype": "float32",
+    "max_length": 1024,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "gradient_checkpointing": true,
+    "single_optimizer_group": false,
+    "deterministic_flag": false,
+    "deepspeed": null,
+    "seed_semantics": [
+      "random.seed(seed)",
+      "torch.manual_seed(seed)",
+      "TrainingArguments(seed=seed)",
+      "TrainingArguments.data_seed=None/default"
+    ]
+  },
+  "execution_order": {
+    "first_sanity_run": "nomic_seed42",
+    "remaining_runs": "Only after nomic_seed42 protocol/result sanity passes."
+  },
+  "claim_gate": {
+    "strong_retriever_alignment_claim_requires": [
+      "V_N > V_J on Nomic candidate pool",
+      "V_J > V_N on Jina candidate pool",
+      "same crossover direction on shared-hit subset",
+      "retriever x HN-source interaction 95% CI excludes zero"
+    ]
+  },
+  "runs": [
+    {
+      "source": "random",
+      "seed": 13,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_random_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/random_seed13",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/random_seed13.log"
+    },
+    {
+      "source": "random",
+      "seed": 42,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_random_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/random_seed42",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/random_seed42.log"
+    },
+    {
+      "source": "random",
+      "seed": 87,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_random_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/random_seed87",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/random_seed87.log"
+    },
+    {
+      "source": "bm25",
+      "seed": 13,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_bm25_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/bm25_seed13",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/bm25_seed13.log"
+    },
+    {
+      "source": "bm25",
+      "seed": 42,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_bm25_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/bm25_seed42",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/bm25_seed42.log"
+    },
+    {
+      "source": "bm25",
+      "seed": 87,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_bm25_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/bm25_seed87",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/bm25_seed87.log"
+    },
+    {
+      "source": "jina",
+      "seed": 13,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_jina_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/jina_seed13",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/jina_seed13.log"
+    },
+    {
+      "source": "jina",
+      "seed": 42,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_jina_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/jina_seed42",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/jina_seed42.log"
+    },
+    {
+      "source": "jina",
+      "seed": 87,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_jina_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/jina_seed87",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/jina_seed87.log"
+    },
+    {
+      "source": "nomic",
+      "seed": 13,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_nomic_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/nomic_seed13",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/nomic_seed13.log"
+    },
+    {
+      "source": "nomic",
+      "seed": 42,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_nomic_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/nomic_seed42",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/nomic_seed42.log"
+    },
+    {
+      "source": "nomic",
+      "seed": 87,
+      "train_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_nomic_hn7_30k.jsonl",
+      "output_dir": "/root/autodl-tmp/lora-code-embeddings-main/text2code/trained_verifiers/reviewer_r1_1_hn_source_ablation/nomic_seed87",
+      "log_file": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/train_logs/nomic_seed87.log"
+    }
+  ]
+}

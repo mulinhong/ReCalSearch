@@ -1,0 +1,244 @@
+{
+  "canonical_group_files": {
+    "bm25": {
+      "go": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/go_train_bm25_top100_5000.jsonl",
+        "sha256": "391a5656dbd45192aba3b6478f98bf5c14df81f76a04718e567024976334b148"
+      },
+      "java": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/java_train_bm25_top100_5000.jsonl",
+        "sha256": "1d57979a527a07d90dce522c1d1c43c48c3ab172c4bef6c07b62914e37980cf2"
+      },
+      "javascript": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/javascript_train_bm25_top100_5000.jsonl",
+        "sha256": "a0e37ee231a3c5aadfa82f8025545a816a06f998ea0b8379df42a71ff5e948e2"
+      },
+      "php": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/php_train_bm25_top100_5000.jsonl",
+        "sha256": "e6d0c2acbe6ba47ce9f9c0bc1f03294e5453285767f2e28f05da0fe651e9957a"
+      },
+      "python": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/python_train_bm25_top100_5000.jsonl",
+        "sha256": "586bf5163ca076287f0789e49a8f6afedf5510031aaa91e8025050e6ef6eb9e2"
+      },
+      "ruby": {
+        "path": "results/reviewer_revision/hn_source_ablation/groups/ruby_train_bm25_top100_5000.jsonl",
+        "sha256": "b34ba9567e16317548ef688b1cb694d4b0b414ebab03d9475f82284a137ddead"
+      }
+    },
+    "jina": {
+      "go": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/go_train_jina_top100_5000.jsonl",
+        "sha256": "b4986d06d0d8379d5205bfe876c8270cf566235471866d4e968b733bca4c7767"
+      },
+      "java": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/java_train_jina_top100_5000.jsonl",
+        "sha256": "decce5323a86bb9530d5e75657b95e1650979fe7e4ab0d2622ec18eddb6655c2"
+      },
+      "javascript": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/javascript_train_jina_top100_5000.jsonl",
+        "sha256": "78c590465b2caa84ad7d2278b75f943492ac6ae22147fa8d5de196425a493b61"
+      },
+      "php": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/php_train_jina_top100_5000.jsonl",
+        "sha256": "f8edbc43f37e6b7ba1c846d05e371c78aa7e25519fbddf06cb99b0912297750b"
+      },
+      "python": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/python_train_jina_top100_5000.jsonl",
+        "sha256": "4a4f0c6dedda8398c23795c9f2873b51b53bb7d80d012564c661bab02352556b"
+      },
+      "ruby": {
+        "path": "results/reviewer_revision/hn_source_ablation/final_groups/ruby_train_jina_top100_5000.jsonl",
+        "sha256": "9107f21cde6b2cfc2de7be821384823fa62747e495fa5195390978ff43d1c9be"
+      }
+    },
+    "nomic": {
+      "go": {
+        "path": "results/jss_rescue_oldcsn/groups/go_train_nomic_hn31_5000.jsonl",
+        "sha256": "4e7239fac7837b9ac2ac38d5968571b916eedc40a2b9654402e5ff8edb76c4f2"
+      },
+      "java": {
+        "path": "results/jss_rescue_oldcsn/groups/java_train_nomic_hn31_5000.jsonl",
+        "sha256": "f8359aea0578a814be23334cfa3ab868a3014a514870e436bf51d6fed4d12821"
+      },
+      "javascript": {
+        "path": "results/jss_rescue_oldcsn/groups/javascript_train_nomic_hn31_5000.jsonl",
+        "sha256": "9fcac6a501a4f670658d5491a0b0414874a1e3e99cecf1c4f7aa8601c543ce68"
+      },
+      "php": {
+        "path": "results/jss_rescue_oldcsn/groups/php_train_nomic_hn31_5000.jsonl",
+        "sha256": "b9f95d7bf1e0a15baf34167a4e5b7f0b8e1ce57aa1268c6c67d584a7e775526b"
+      },
+      "python": {
+        "path": "results/jss_rescue_oldcsn/groups/python_train_nomic_hn31_5000.jsonl",
+        "sha256": "f513358a6a91a9d94356329daaa1f2e05341238b023cb607d8996598d97e3158"
+      },
+      "ruby": {
+        "path": "results/jss_rescue_oldcsn/groups/ruby_train_nomic_hn31_5000.jsonl",
+        "sha256": "f38373212bc8b9b54766505ddb51c45534ff46d2a1fffa5d297a850411804b69"
+      }
+    },
+    "random": {
+      "go": {
+        "path": "results/jss_rescue_oldcsn/groups/go_train_random31_5000.jsonl",
+        "sha256": "ebb4cad9880746734db1183eb34037c3a420187fc8af6c28a6d91ea401cc2bb4"
+      },
+      "java": {
+        "path": "results/jss_rescue_oldcsn/groups/java_train_random31_5000.jsonl",
+        "sha256": "28bbedca69c222f71edc893aaca2397c38e34ac13467ce77975f73f73bd8f8a7"
+      },
+      "javascript": {
+        "path": "results/jss_rescue_oldcsn/groups/javascript_train_random31_5000.jsonl",
+        "sha256": "a6d33cc4dbc09ddfccd8dc345ad7c20c4e716d18a5b668479f91cfc2ae23bc25"
+      },
+      "php": {
+        "path": "results/jss_rescue_oldcsn/groups/php_train_random31_5000.jsonl",
+        "sha256": "d3d0fb91982dcf553525b00527441070d3db170b832d38c57d033795c13b9d39"
+      },
+      "python": {
+        "path": "results/jss_rescue_oldcsn/groups/python_train_random31_5000.jsonl",
+        "sha256": "8845fade3d7a0552977864a68d8569df7025ea3f8c3cb2b5f6b56937e9f67193"
+      },
+      "ruby": {
+        "path": "results/jss_rescue_oldcsn/groups/ruby_train_random31_5000.jsonl",
+        "sha256": "4f1efc7f7f04aa021a1d5dde5fd0a85885695ccc5fb484ac1c2f064e0a1f3cbf"
+      }
+    }
+  },
+  "purpose": "Map frozen R1-1 assets before R1-8 B0 pilot.",
+  "sealed_nomic_test_pools": {
+    "go_test_nomic_top100.npz": "b5a1875a8256c7ab6cd5942bfda88cb084350cbc57d3e2f4c348ff7429ea31c4",
+    "java_test_nomic_top100.npz": "ddcfc6ceeacf521ef5bb5ac9949a089e0ecbd8a4295457630c84e033c93a2e90",
+    "javascript_test_nomic_top100.npz": "eaa081f31ad5d8f03f56fda407752244d34aa06cc5cb614539b6fd6f3eff14d7",
+    "php_test_nomic_top100.npz": "5d0f74d6ea5096da67ffa35518df2d5d1c75662e6bb5c1a941ab1290dc1fb6e3",
+    "python_test_nomic_top100.npz": "579bf177c8940f3523c4dea875b0a2aa9c7d4d5436a6399656904b8b37b445b3",
+    "ruby_test_nomic_top100.npz": "248e758cb18bbc095602cf456066c388cdac9d96c0de782a468ee63f47033887"
+  },
+  "sealed_training_sources": {
+    "bm25": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_bm25_hn7_30k.jsonl",
+      "rows": 270000,
+      "sha256": "fb21b429c7190b2f5527fd50d22cc3c93159faa33e431f8ab5eb8f0ba149b636",
+      "unique_qids": 30000
+    },
+    "jina": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_jina_hn7_30k.jsonl",
+      "rows": 270000,
+      "sha256": "24e719cafd5faad1e1e4e613801343abc0ff182dc9d0df64cc3200558d45b2bf",
+      "unique_qids": 30000
+    },
+    "nomic": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_nomic_hn7_30k.jsonl",
+      "rows": 270000,
+      "sha256": "2240eede7a3d50bf9846562ca0eefb4b0236c8619d40c7110212e947fea16503",
+      "unique_qids": 30000
+    },
+    "random": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/qwen_data/combined_random_hn7_30k.jsonl",
+      "rows": 270000,
+      "sha256": "f280566788339d952037889af7122406f1b98a4171e1416545e840d53605bd5a",
+      "unique_qids": 30000
+    }
+  },
+  "static_assets": {
+    "evaluation_protocol": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_evaluation_protocol_frozen.json",
+      "sha256": "ff07627c549d7fc6d1dadcd87f87b2b7a0a276b92d430bdeeb14550cabeec438"
+    },
+    "evaluator": {
+      "path": "eval_llm_verifier.py",
+      "sha256": "a3156c285728d54180ce0da1c65255a92adfe15f583dc987e47ad8a97b8e665a"
+    },
+    "final_protocol": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_final_protocol.json",
+      "sha256": "79f0070ffe80d18c977d608b14f819eb7bd4df55b2cd3bb4e6d0e914b5b44d88"
+    },
+    "four_source_270k_audit": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/four_source_270k_training_data_audit.json",
+      "sha256": "4ce600ef87899003bdde719f6baeec8b626652f8444bbfd1f5807c7c5d4177d1"
+    },
+    "frozen_config": {
+      "path": "results/reviewer_revision/recal_valid_fresh_20260911/recal_main_frozen_config.json",
+      "sha256": "70789e10518f32a97f5990b234833fb0443fbcbe426e8a8c3515ab93e6b11b0f"
+    },
+    "global_12model_audit": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/r1_1_12model_global_audit.json",
+      "sha256": "fc962c960ed3be23ee2686902cd4b7c2e6cda2d45ce700aeb84fd81a8b601e11"
+    }
+  },
+  "trained_verifiers": [
+    {
+      "adapter_sha256": "2f447a59328845fd6b0d24e8c33f2ba8b86b54d9314411b667bb637063c91617",
+      "model_dir": null,
+      "pass": true,
+      "run": "random_seed13"
+    },
+    {
+      "adapter_sha256": "570698bc4f5c250e959039a9cae75244262ef6026c9b67f570aa2459be3da6be",
+      "model_dir": null,
+      "pass": true,
+      "run": "random_seed42"
+    },
+    {
+      "adapter_sha256": "6a32d88637e6c5af845ec64d621f6b15139342fe984ff89bbb1b5b928aa11b71",
+      "model_dir": null,
+      "pass": true,
+      "run": "random_seed87"
+    },
+    {
+      "adapter_sha256": "fc80e5828e4b0d11d855f9b47972df3e61e34a886c43c3b26c22755ed6bb608f",
+      "model_dir": null,
+      "pass": true,
+      "run": "bm25_seed13"
+    },
+    {
+      "adapter_sha256": "ca6179ed1b8a35241cdf9458021fa866ba708a79452d0035b283f164f77d281b",
+      "model_dir": null,
+      "pass": true,
+      "run": "bm25_seed42"
+    },
+    {
+      "adapter_sha256": "de35ece7a392679e0fef8d9900763293f198cce51f73d8710d7b29510ae5326d",
+      "model_dir": null,
+      "pass": true,
+      "run": "bm25_seed87"
+    },
+    {
+      "adapter_sha256": "3dd702f2e63b018d36e2dd0593e31e9a3d3a728e75688804ada3ed59ab372e91",
+      "model_dir": null,
+      "pass": true,
+      "run": "jina_seed13"
+    },
+    {
+      "adapter_sha256": "a5ae4db056739838125e15572387b6a61ed3cc504d0efaf1cf19151102673c59",
+      "model_dir": null,
+      "pass": true,
+      "run": "jina_seed42"
+    },
+    {
+      "adapter_sha256": "d01ff72c11c27953ea35aec57893f925d3a34f697057f48fb388d505130a719f",
+      "model_dir": null,
+      "pass": true,
+      "run": "jina_seed87"
+    },
+    {
+      "adapter_sha256": "34ab6915e04de413a882199977f26cbfc834c1d4a5868724961efb40bfdf2039",
+      "model_dir": null,
+      "pass": true,
+      "run": "nomic_seed13"
+    },
+    {
+      "adapter_sha256": "d057ddc5ce9f7de8292cc627914ce12502b41b88a377b555dcace1796af27dc7",
+      "model_dir": null,
+      "pass": true,
+      "run": "nomic_seed42"
+    },
+    {
+      "adapter_sha256": "d94c79e89ee27e7f7e830e097c7ee61ccc38ae533d23d2a4c7997ca53d54a0ac",
+      "model_dir": null,
+      "pass": true,
+      "run": "nomic_seed87"
+    }
+  ],
+  "version": "next_stage_v1_a0"
+}

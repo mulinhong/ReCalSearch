@@ -1,0 +1,17 @@
+{
+  "protocol": "r1_3_validation_smoke_seed13_v3",
+  "original_evaluator_sha256": "a3156c285728d54180ce0da1c65255a92adfe15f583dc987e47ad8a97b8e665a",
+  "new_evaluator_sha256": "3ecf660cafc0449cc403105b6225b07a68d89170efec0ca5398fe5cb56e6a417",
+  "candidate_pool_sha256": "fc60c7012e7c2019f034e8d46171aa3220cf20c9e7c5afc3728aa56efa5c85ba",
+  "model_adapter_sha256": "c02e0fa78a351bff68fd63e6e28128e112a83a42850cbe47ef606168e045cc59",
+  "frozen_config_sha256": "70789e10518f32a97f5990b234833fb0443fbcbe426e8a8c3515ab93e6b11b0f",
+  "change": "skip unused Nomic embedding cache when external pool is supplied",
+  "scoring_logic_changed": false,
+  "ranking_logic_changed": false,
+  "split": "valid",
+  "max_queries": 8,
+  "verify_top_k": 15,
+  "fusion_alpha": 1.0,
+  "normalization": "zscore",
+  "gpu_inference_started": false
+}

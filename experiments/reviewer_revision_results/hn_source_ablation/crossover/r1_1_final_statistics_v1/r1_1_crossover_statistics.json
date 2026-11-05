@@ -1,0 +1,429 @@
+{
+  "reviewer_item": "R1-1",
+  "replicates": 10000,
+  "bootstrap_seed": 20261013,
+  "bootstrap_design": "Paired resampling of queries within each of six fixed language strata, with three training seeds resampled jointly across all four conditions.",
+  "full_query_count": 100529,
+  "shared_hit_count": 76274,
+  "shared_hit_by_language": {
+    "ruby": 1911,
+    "javascript": 4951,
+    "php": 17523,
+    "python": 19337,
+    "java": 20542,
+    "go": 12010
+  },
+  "cell_order": [
+    "V_N@N",
+    "V_J@N",
+    "V_N@J",
+    "V_J@J"
+  ],
+  "observed_cells": {
+    "full_macro": [
+      0.5887213967764828,
+      0.5833034471479365,
+      0.5388690867101259,
+      0.5527053731331725
+    ],
+    "full_micro": [
+      0.5613479351777342,
+      0.554091643085226,
+      0.5063966940690151,
+      0.5187703449778153
+    ],
+    "shared_macro": [
+      0.7243723568606303,
+      0.7151132822095296,
+      0.6789029272114556,
+      0.6971442186781762
+    ],
+    "shared_micro": [
+      0.7142461398215477,
+      0.7027362174248896,
+      0.6658608074953554,
+      0.6822037246993158
+    ]
+  },
+  "statistics": {
+    "full_macro": {
+      "nomic_pool_matching_advantage": {
+        "effect_pp": 0.5417949628546359,
+        "ci95_low_pp": 0.32916524383524465,
+        "ci95_high_pp": 0.7635346497527103,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "jina_pool_matching_advantage": {
+        "effect_pp": 1.3836286423046573,
+        "ci95_low_pp": 1.2177788629324418,
+        "ci95_high_pp": 1.5595022381822201,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "difference_in_differences": {
+        "effect_pp": 1.9254236051592932,
+        "ci95_low_pp": 1.6844711588119696,
+        "ci95_high_pp": 2.147379520026883,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      }
+    },
+    "full_micro": {
+      "nomic_pool_matching_advantage": {
+        "effect_pp": 0.7256292092508221,
+        "ci95_low_pp": 0.5149591697254735,
+        "ci95_high_pp": 0.9765945090981369,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "jina_pool_matching_advantage": {
+        "effect_pp": 1.237365090880016,
+        "ci95_low_pp": 1.044996390138092,
+        "ci95_high_pp": 1.4729269906395532,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "difference_in_differences": {
+        "effect_pp": 1.962994300130838,
+        "ci95_low_pp": 1.714015545424372,
+        "ci95_high_pp": 2.16722254887059,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      }
+    },
+    "shared_macro": {
+      "nomic_pool_matching_advantage": {
+        "effect_pp": 0.9259074651100652,
+        "ci95_low_pp": 0.6610223537898333,
+        "ci95_high_pp": 1.2157446064573163,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "jina_pool_matching_advantage": {
+        "effect_pp": 1.82412914667206,
+        "ci95_low_pp": 1.6020128667191682,
+        "ci95_high_pp": 2.0570240950238396,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "difference_in_differences": {
+        "effect_pp": 2.750036611782125,
+        "ci95_low_pp": 2.4441670675066853,
+        "ci95_high_pp": 3.02450924931071,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      }
+    },
+    "shared_micro": {
+      "nomic_pool_matching_advantage": {
+        "effect_pp": 1.1509922396658157,
+        "ci95_low_pp": 0.8888058211705383,
+        "ci95_high_pp": 1.46277450763749,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "jina_pool_matching_advantage": {
+        "effect_pp": 1.6342917203960416,
+        "ci95_low_pp": 1.374425476818698,
+        "ci95_high_pp": 1.9435042637248316,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      },
+      "difference_in_differences": {
+        "effect_pp": 2.7852839600618573,
+        "ci95_low_pp": 2.4593729762407737,
+        "ci95_high_pp": 3.050694810581044,
+        "bootstrap_sign_tail": 0.00019998000199980003
+      }
+    }
+  },
+  "gates": {
+    "nomic_direction": true,
+    "jina_direction": true,
+    "shared_nomic_direction": true,
+    "shared_jina_direction": true,
+    "interaction_ci_positive": true
+  },
+  "statistical_gate": "PASS",
+  "scope": "Results conditional on six languages and three observed training seeds; negative-hardness confounding is a separate audit.",
+  "rank_artifacts": {
+    "nomic/nomic_seed13/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "9c37fc6ddd681fc2915b187fb87df0cbcd730afed6b0d3574d200918ef1aa60b"
+    },
+    "jina/nomic_seed13/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/ruby_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "57d5b5a1ae86f097bdd8badd6c610cf929f7a255568e2b397e365a31f293c285"
+    },
+    "nomic/jina_seed13/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "7b290a8e1ff53e0eee655505b7629d1472a43bf53f536d2bd88d14d54647cd36"
+    },
+    "jina/jina_seed13/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/ruby_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "b98345914532fb7cd94fde13e14026a221abc5feff2a093d3ca22c9b568eb6e5"
+    },
+    "nomic/nomic_seed42/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "cfa41d18720bbe3cc0cabec45ac601d5bbfa598d0db83f290be68b30eed18d55"
+    },
+    "jina/nomic_seed42/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/ruby_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "a3fb19393a8bf2c7cbe01777f459f46dffaa41d8a3549cc0b045624b57c3224c"
+    },
+    "nomic/jina_seed42/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "51a7e389ddfdf89c14565b3c3cfb9100f90bc8925e3b3b19af172efef49a73e7"
+    },
+    "jina/jina_seed42/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/ruby_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "463685b441a828b2ab6a79d5ac76cf23811f3d3c621a2efe850c7eb77478de9c"
+    },
+    "nomic/nomic_seed87/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/ruby_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "c7952b78057af12d1769d88a10451c3603f22b140887ae7abd144ca09cd06d90"
+    },
+    "jina/nomic_seed87/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/ruby_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "bb8713a1772a91ce7f4d23a390b5901bd70ab6ae777b40f14116cea3d50f4acd"
+    },
+    "nomic/jina_seed87/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/ruby_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "946d2b07371a05e15c757df4938ae022a35bad9cc2815e8861fde99d860f80af"
+    },
+    "jina/jina_seed87/ruby": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/ruby_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "88c2250a5d857df24aea357e813274e1c5fe10a4edbba774d7a04de927486184"
+    },
+    "nomic/nomic_seed13/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "7d87a694f66d38edb261ec79ba23366a3d24139bff676d2346e54043abe2bfdb"
+    },
+    "jina/nomic_seed13/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/javascript_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "4b5b7bacae927cced04ad947f397a4f80c4bfb3f6bbebb25f4455747f3c279a3"
+    },
+    "nomic/jina_seed13/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "c8d0e08ad23b149bf14aecee021218bcd13a81d9d10bae99e820220a80ec241d"
+    },
+    "jina/jina_seed13/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/javascript_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "0307bbf167e65c2e87dc6f9469b92ad3b77785905b8233acc1cce70004280716"
+    },
+    "nomic/nomic_seed42/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "7a7e8af27d13e4f71b5b290971bdcdcf49a0e41dd2693b570c393336ea3389c6"
+    },
+    "jina/nomic_seed42/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/javascript_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "d5ecbfd752acf10cd33675975967778ea1d828eba7b72bd081cc2e3ad6c8949a"
+    },
+    "nomic/jina_seed42/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "95b9f647afb5ac19552b4c2575940d5e62506857b6af023de3a5e6b7656b7fff"
+    },
+    "jina/jina_seed42/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/javascript_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "ec5f4788dc60cffb012a5ee63a7a7757cf096a8596de2fdafa48fd3c1c95ec3b"
+    },
+    "nomic/nomic_seed87/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/javascript_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "95f772b06929783479b1a95e7f6945a53dc5850c1e39a3e5eed3c2f13186a4d3"
+    },
+    "jina/nomic_seed87/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/javascript_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "50eba7c5bb857add85bdfcf6b73fd32884a244e2bbc1d535a9b1ae3d830f8b19"
+    },
+    "nomic/jina_seed87/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/javascript_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "d6c148c8dff97d0bde0b71621493c09a7b5300f699151e19126b558cc68c716d"
+    },
+    "jina/jina_seed87/javascript": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/javascript_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "0702d344842c51e76ed714f1110a92cd750f35ada5a65c6397c1c0cf4e45a7b6"
+    },
+    "nomic/nomic_seed13/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "930763700e93a57e18547f7541c8918c8d33de6800f346c1bf7344b39ed44eb4"
+    },
+    "jina/nomic_seed13/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/php_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "a9703a0ee6e6bac278220959952141aed56bb2324fa1aa454094d279415c6ad1"
+    },
+    "nomic/jina_seed13/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "9a52a39520121e3d93e86cef0b6ea8d8f6011c9548eff5997c746a889115e35e"
+    },
+    "jina/jina_seed13/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/php_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "92261c25ae9c52064ddebae35a3bad279ac18da2a773af3de581d416c622caaf"
+    },
+    "nomic/nomic_seed42/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "ccdda4b9118dda73fd6ca14ebd4430ad8a3fcb94536fd285f23694145d22bc14"
+    },
+    "jina/nomic_seed42/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/php_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "d5f1037457b0ce4c02b4e233fcbc0295d797195725c0faeeb5adf618d7517a31"
+    },
+    "nomic/jina_seed42/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "19bb7226771c1b44a02a82c1fe25a92bbc63208d54389e27882a0b69409c529d"
+    },
+    "jina/jina_seed42/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/php_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "daf0f0bc4bd3a044ee375c47e16ae00660510bba5ce911fa5375f28262cf4380"
+    },
+    "nomic/nomic_seed87/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/php_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "783144e65a1f72f84d81f7c2ef3b4268339998e0881d99e0aaaa80e7faf19675"
+    },
+    "jina/nomic_seed87/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/php_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "35f81003dc0dbdc2936dbe7340a612a144d19d3f7f9bd1c6b2ab20250490af3c"
+    },
+    "nomic/jina_seed87/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/php_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "eb3804fbde73911994800c54869832bc99cc6c6627ae12b894c5d8cf284c34a5"
+    },
+    "jina/jina_seed87/php": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/php_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "997ada3dc8b6b8830cb3db931857ce9671638b935e5f76eae9fcd5c9e53d015a"
+    },
+    "nomic/nomic_seed13/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "f45a8cad1c5ded1b0083d32301518104ce2cb6fbca7b64df006c1f5517d65795"
+    },
+    "jina/nomic_seed13/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/python_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "2ae42f11e0bd514e88cdb566b573b9d68ed58029f68459bf80bdfb6c17cee9f1"
+    },
+    "nomic/jina_seed13/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "2e43f5041f0a92e4c04c5a4979391c4aa4450931f9da84042551b32226244df4"
+    },
+    "jina/jina_seed13/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/python_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "afdd4d053e09053eabd5f540e1251eeb8756486257da055158bac43fad68887c"
+    },
+    "nomic/nomic_seed42/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "bf91b07ffeb4c74b779f18b3a84939ed69cce1e129f0fa019fecd68f3b75ff87"
+    },
+    "jina/nomic_seed42/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/python_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "48abd7ed8f1a0e374934d3d80307f77d3e1cb6aac8ee9a414842cd0317f98f88"
+    },
+    "nomic/jina_seed42/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "b623bf5894bdbdef53a95e4359fccb778b520fcaabbf4f2a911767eccceb8769"
+    },
+    "jina/jina_seed42/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/python_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "d64d355a0f3cdc9d9db6a7fd434e486a6073aa303087ecf3c6f418a3de06ea30"
+    },
+    "nomic/nomic_seed87/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/python_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "dd5a1e322fb0e42274817c95fbee3b126c5fd7bfd88995fb2f1e9245581f9da6"
+    },
+    "jina/nomic_seed87/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/python_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "5d3ce77aff6aa8e50906ff1fb12af8bbf2b9ab5f4f4d69ad81dfea9f853ff878"
+    },
+    "nomic/jina_seed87/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/python_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "76a3a1b4d75a27bfa3f367ffca9ff4c4c98f0f114754bbcd1ff467fc643d3c4d"
+    },
+    "jina/jina_seed87/python": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/python_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "f5bc23586e001eda38d006801d49485b01dd0606b3c4cf001c11605edcbb4fe4"
+    },
+    "nomic/nomic_seed13/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "e0022eb12234071ac1163345c324ddc03d5575400acba08a7c6373de7c3bee77"
+    },
+    "jina/nomic_seed13/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/java_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "824ca04f2f608b6ac6a6dc2feed4dbd7e620212c7a890b671ec40fea0f421f2b"
+    },
+    "nomic/jina_seed13/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "9fc9e4683a3d09ac73655e28ca64a38eccf02bf9953b672be2a6e3acd9791d84"
+    },
+    "jina/jina_seed13/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/java_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "7181b165fc3769bbda7e39843e7652e1817775c39fc03b7b8a0c7a4fecd20c5e"
+    },
+    "nomic/nomic_seed42/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "2c35b0a41175f0d36b673c045a13652cca1c06457d97316a010e295fe65bb9de"
+    },
+    "jina/nomic_seed42/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/java_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "81b0028799007e6742fd9d7b7184bab7913dd14e2f693e6d6bdfbee63295ff3c"
+    },
+    "nomic/jina_seed42/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "7d328cd5f7dbbbcc352d8b075ac85bcfbf5faba5ab2801cf2a5e7d0c7e85a540"
+    },
+    "jina/jina_seed42/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/java_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "39d66e196d6a241f7cc1e062f76c28299571af1424e616818c779ad7278360c7"
+    },
+    "nomic/nomic_seed87/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/java_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "2b795d3a8071b7915d64a4e2d338b854747c3ba89c9ac83105bf368bce7a57a1"
+    },
+    "jina/nomic_seed87/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/java_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "12507fa63791539c04de88c9ca0aaf0fc1189a8a9da4296baf70ae847900540d"
+    },
+    "nomic/jina_seed87/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/java_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "b9420d6c9ecb0467efbb28473149cdaceef1fe352f103e798a4b0fa216789ef3"
+    },
+    "jina/jina_seed87/java": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/java_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "045c241c9121ae91491f5a78d2de4aaf9e8245fb16ed89ec46a23e50973fcdb4"
+    },
+    "nomic/nomic_seed13/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed13/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "c5bd9cbf6c328cbb18f4f5bb6fcc42eeacd085f7cc2e30abc634016b39a0952d"
+    },
+    "jina/nomic_seed13/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed13/ranks/go_test_nomic_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "75dd4bea0bec74d825d55703abd65d8c1007fc25fb4cdd14d082546c74b87272"
+    },
+    "nomic/jina_seed13/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed13/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "00a4e747bc22af04f4965b37b6bffbe448b42e75a5c1d6e7c46775ea1fc85c93"
+    },
+    "jina/jina_seed13/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed13/ranks/go_test_jina_seed13_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "5c3ccdf48e977546f4d22e194ee49723b9a81c010a2da67884fa148c5568fa4e"
+    },
+    "nomic/nomic_seed42/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed42/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "5577046a320c526c7d3a1bea5758e9d7cc0eb9657a9ee6fada2fa5b8d6c91a4b"
+    },
+    "jina/nomic_seed42/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed42/ranks/go_test_nomic_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "6e1259d68b152ec911456fd7aeee63e53c9319ec1892fd403c8ad24036f8671f"
+    },
+    "nomic/jina_seed42/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed42/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "8d9c045d7d8264b3ada2ff7eddd5270a595a4d483505844f30ce25f2a574b4d9"
+    },
+    "jina/jina_seed42/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed42/ranks/go_test_jina_seed42_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "9d6e177f943c7423c3a8917e690bfd15fec45cc7d3da4589c1ff189654e8eecd"
+    },
+    "nomic/nomic_seed87/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/nomic_seed87/ranks/go_test_nomic_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "172fbcf1ca3deec59c0c2119712a9e7b5404cdec710f67f2fde3fd1bb6603907"
+    },
+    "jina/nomic_seed87/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/nomic_seed87/ranks/go_test_nomic_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "3ac5dd07af71ad5cddf5b769afdac5bfb3d343a4c4ab47bba4d505f6a9f0101c"
+    },
+    "nomic/jina_seed87/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/nomic_pool_verifier_only/jina_seed87/ranks/go_test_jina_hn_verifier_on_nomic_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "e9d4acb842ff2ee9c7a2773ee9f1231106829c761b276a35b8f741f71ee74821"
+    },
+    "jina/jina_seed87/go": {
+      "path": "/root/autodl-tmp/lora-code-embeddings-main/text2code/results/reviewer_revision/hn_source_ablation/crossover/jina_pool_verifier_only/jina_seed87/ranks/go_test_jina_seed87_on_jina_pool_cand100_verify15_verifier_only.ranks.npy",
+      "sha256": "d263cc94fb7f7e6680d5b95f4e674533a0079a135708b5cf827497ed9f3c078d"
+    }
+  }
+}

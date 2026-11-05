@@ -1,0 +1,97 @@
+{
+  "dataset": "CodeSearchNet",
+  "languages": [
+    "ruby",
+    "javascript",
+    "php",
+    "python",
+    "java",
+    "go"
+  ],
+  "main_comparison": {
+    "metric": "six_language_macro_mrr_percent",
+    "nomic_direct_reported": 59.68,
+    "recal_search_reported": 62.45,
+    "scope": "original manuscript aggregate"
+  },
+  "coderankllm": {
+    "recal_search_macro_mrr": 62.44638964180733,
+    "coderankllm_macro_mrr": 60.000567659628125,
+    "delta_macro_pp": 2.445821982179208,
+    "ci95_macro_pp": [
+      2.2532818039230595,
+      2.644837440592481
+    ],
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260911,
+    "queries": 100529,
+    "source": "previously verified historical CodeRankLLM final frozen comparison; raw CodeRankLLM ranks not in current archive"
+  },
+  "four_negative_sources": {
+    "random_macro_mrr_mean_sd": [
+      60.6306830286,
+      0.0983977351
+    ],
+    "bm25_macro_mrr_mean_sd": [
+      59.9958245909,
+      0.1927648074
+    ],
+    "jina_macro_mrr_mean_sd": [
+      62.4919773691,
+      0.0729145878
+    ],
+    "nomic_macro_mrr_mean_sd": [
+      62.5009895001,
+      0.0343194688
+    ],
+    "comparison_nomic_minus_random_pp": [
+      1.8703064715,
+      1.687278,
+      2.042732
+    ],
+    "comparison_nomic_minus_bm25_pp": [
+      2.5051649093,
+      2.278477,
+      2.754639
+    ],
+    "comparison_nomic_minus_jina_pp": [
+      0.0090121311,
+      -0.11779,
+      0.137689
+    ],
+    "seeds": [
+      13,
+      42,
+      87
+    ],
+    "bootstrap_replicates": 10000,
+    "source": "earlier frozen R1-1 output; the original training/source-ablation scripts are on AutoDL and not in current archive"
+  },
+  "crossover": {
+    "full_macro_mrr": {
+      "nomic_hn_at_nomic": 58.87214,
+      "jina_hn_at_nomic": 58.330345,
+      "nomic_hn_at_jina": 53.886909,
+      "jina_hn_at_jina": 55.270537
+    },
+    "shared_hit_macro_mrr": {
+      "nomic_hn_at_nomic": 72.4372,
+      "jina_hn_at_nomic": 71.5113,
+      "nomic_hn_at_jina": 67.8903,
+      "jina_hn_at_jina": 69.7144
+    },
+    "full_interaction_pp": [
+      1.925424,
+      1.684471,
+      2.14738
+    ],
+    "shared_hit_interaction_pp": [
+      2.750037,
+      2.444167,
+      3.024509
+    ],
+    "scope": "verifier-only, no dense-score fusion",
+    "source": "earlier frozen crossover output; raw crossover scripts/draws not in current archive"
+  },
+  "statistical_caution": "The raw rank arrays in derived_ranks/ reproduce Nomic vs ReCalSearch TEST bootstrap only; do not present these as the CodeRankLLM or crossover raw data."
+}

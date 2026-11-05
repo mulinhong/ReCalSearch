@@ -1,0 +1,94 @@
+{
+  "candidate_pool": "sealed_nomic_top100",
+  "candidate_top_k": 100,
+  "descriptive_vs_nomic": {
+    "interpretation": "Descriptive only. No retriever-specific conclusion before the frozen crossover and hierarchical bootstrap interaction analysis.",
+    "jina_minus_nomic_macro_mean_pp": -0.009012131082499764,
+    "jina_minus_nomic_micro_mean_pp": -0.044625392435477806
+  },
+  "fusion_alpha": 1.0,
+  "hn_source": "jina",
+  "language_mrr": {
+    "go": {
+      "mean_mrr": 72.6398603474157,
+      "sample_std_mrr": 0.08601578477593154,
+      "seed13": 72.61864284824006,
+      "seed42": 72.73449932089451,
+      "seed87": 72.56643887311256
+    },
+    "java": {
+      "mean_mrr": 59.20196262332501,
+      "sample_std_mrr": 0.07233337587357494,
+      "seed13": 59.22130477801222,
+      "seed42": 59.26265864094993,
+      "seed87": 59.12192445101287
+    },
+    "javascript": {
+      "mean_mrr": 59.12267036607466,
+      "sample_std_mrr": 0.0502497450598195,
+      "seed13": 59.068165139581154,
+      "seed42": 59.132691551863225,
+      "seed87": 59.167154406779574
+    },
+    "php": {
+      "mean_mrr": 43.424734074732775,
+      "sample_std_mrr": 0.09947578352749306,
+      "seed13": 43.50947058439267,
+      "seed42": 43.44952402458701,
+      "seed87": 43.31520761521865
+    },
+    "python": {
+      "mean_mrr": 71.24461847387315,
+      "sample_std_mrr": 0.13160908597652807,
+      "seed13": 71.3714436421846,
+      "seed42": 71.25371439972594,
+      "seed87": 71.1086973797089
+    },
+    "ruby": {
+      "mean_mrr": 69.31801832895259,
+      "sample_std_mrr": 0.15209086709503894,
+      "seed13": 69.47598307884364,
+      "seed42": 69.305496357238,
+      "seed87": 69.17257555077616
+    }
+  },
+  "macro_mrr": {
+    "mean": 62.49197736906231,
+    "sample_std": 0.07291458778225522,
+    "seed13": 62.54416834520905,
+    "seed42": 62.52309738254311,
+    "seed87": 62.408666379434784
+  },
+  "micro_mrr": {
+    "mean": 59.537269609796816,
+    "sample_std": 0.08106886887274915,
+    "seed13": 59.59140455811652,
+    "seed42": 59.57633999943768,
+    "seed87": 59.444064271836226
+  },
+  "n_queries": 100529,
+  "normalization": "zscore",
+  "pass": true,
+  "reviewer_item": "R1-1",
+  "source_audits": {
+    "13": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_jina_seed13_posteval_audit.json",
+      "sha256": "e1649c91f2d1a0d7d21da63af148657efa92ff14f0007fe4e89ae29d8d3a1ded"
+    },
+    "42": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_jina_seed42_posteval_audit.json",
+      "sha256": "d35985437e594ce558beeb1a017f0c1710db5c501357b8825ed50a6f647c1156"
+    },
+    "87": {
+      "path": "results/reviewer_revision/hn_source_ablation/final_protocol/nomic_pool_jina_seed87_posteval_audit.json",
+      "sha256": "db02053c3b45072241e9667c756b095b5f29a1be91abfc5600b247e1aafd9396"
+    }
+  },
+  "stage": "Jina-HN three-seed summary on sealed Nomic top100 pool",
+  "training_seeds": [
+    13,
+    42,
+    87
+  ],
+  "verify_top_k": 15
+}

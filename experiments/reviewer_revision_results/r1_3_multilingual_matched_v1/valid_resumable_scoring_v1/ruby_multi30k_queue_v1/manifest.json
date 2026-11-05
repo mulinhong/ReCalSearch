@@ -1,0 +1,13 @@
+{
+  "batch_size": 1,
+  "jobs": [
+    "multi30k_seed13_ruby",
+    "multi30k_seed42_ruby",
+    "multi30k_seed87_ruby"
+  ],
+  "max_new_chunks": 0,
+  "plan_sha256": "5d6d038e86e2cca490ceb9fe9f9c4ffcbec95be6f5cd74527ff63da3110fd1fb",
+  "split": "valid",
+  "test_accessed": false,
+  "worker_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "jobs": [
+    {
+      "job_id": "mono5k_seed42_ruby",
+      "mrr": 73.80130065879081,
+      "result_sha256": "2d709f2b9290c433feb1e4767dbd8b647eecf6d2289b42a7b1449ebfdc4ce9ab",
+      "rank_sha256": "22aa05017f57854bbf591cee97d8582f7650cc53576caf0cfd66d674fb870916"
+    },
+    {
+      "job_id": "multi5k_seed42_ruby",
+      "mrr": 74.08049319805579,
+      "result_sha256": "1e8b8ba1facf41f769d1e2fbc68a1c5e43581ef6bd65cae50706e382ae47c522",
+      "rank_sha256": "7d2d5e320cb2aa4a138b3994ed4e7e2fc7613a44bdaa4ebc10d2478d9a056d8e"
+    },
+    {
+      "job_id": "mono5k_seed87_ruby",
+      "mrr": 73.760916014513,
+      "result_sha256": "23b5c01d4f4d2da5692529fc6072defba538d67fe0f04f8b7a1c313f1e6cda54",
+      "rank_sha256": "6d5b3b844dde0d13fcfb320ac3b975059e5af09eb304dc663bb788402aa3577d"
+    },
+    {
+      "job_id": "multi5k_seed87_ruby",
+      "mrr": 73.98809176115458,
+      "result_sha256": "637a54b19daeebe9bb83a7c20b48df0403355dc2c7ba824971569b912897cc77",
+      "rank_sha256": "190c3d74ebaffad56606105dcf5a6860d3cda0a8b6175de3dcf5784a100bd64a"
+    }
+  ],
+  "worker_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b",
+  "plan_sha256": "5d6d038e86e2cca490ceb9fe9f9c4ffcbec95be6f5cd74527ff63da3110fd1fb",
+  "test_accessed": false
+}

@@ -1,0 +1,15 @@
+{
+  "protocol": "work1_r1_3_multi5k_seed13_v5",
+  "method": "runtime_training_arguments_override",
+  "original_trainer_sha256": "ec0a1307a2b1d5e2a283fa3527582b487761e388fbda26fa6a1b5b758d3e2c07",
+  "wrapper_sha256": "7febaaa29c3d1c516bfad6484d74cfcdb396e1669172664e825b38382f099f23",
+  "dataset_sha256": "bcbd58d005cf227a52c9afed0912983340ce1b30888bd32c42643a214eb4bf3b",
+  "optimizer": "adamw_torch",
+  "data_seed": null,
+  "seed": 13,
+  "epochs": 1,
+  "training_examples": 45000,
+  "effective_tokens": 8126238,
+  "original_supports_optim_cli": true,
+  "training_started": false
+}

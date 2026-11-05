@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "job_id": "mono5k_seed13_javascript",
+      "mrr_percent_exact": 57.34970980724522,
+      "ranks_sha256": "ef1a5d507b89671be66ae97286d7ac6f47adb9ee8ee3a8c221060d3a78a96c9b",
+      "result_sha256": "10017e768e4e2159186c84872d98c4f9309cc161a80b660ca31d64e71e5ac353"
+    },
+    {
+      "job_id": "multi5k_seed13_javascript",
+      "mrr_percent_exact": 56.84507025680413,
+      "ranks_sha256": "d19e024789bd0f3d3f25ba44bc2e7bf827eaa0fcadf7de4c83fe1e3e1d8bc85f",
+      "result_sha256": "224e352c493e99049637bacefcb3622424b7e01681b694d283001b26acc22b81"
+    },
+    {
+      "job_id": "multi30k_seed13_javascript",
+      "mrr_percent_exact": 57.53195079283044,
+      "ranks_sha256": "4cb61652a13b7a8986055733b1b2671cf1d3dfd8950008f7c832b3a422003775",
+      "result_sha256": "06c47e67547b92e529214653de0689653d87bc4e7f82d9a7ab828e5db5da0265"
+    },
+    {
+      "job_id": "mono5k_seed42_javascript",
+      "mrr_percent_exact": 56.78196831438558,
+      "ranks_sha256": "f62252b7e11c8228bdefc7b591e083e48a59d2ac9e071b6729e80458a3a3a8ac",
+      "result_sha256": "9622bf501e308976937a3b8bc12aaff1425207c5ab8772e34b16f18fccfc6e71"
+    },
+    {
+      "job_id": "multi5k_seed42_javascript",
+      "mrr_percent_exact": 57.306976983705425,
+      "ranks_sha256": "3f52274760c81bd89d78c56cf8e189e1102b5ebad756605fce2954c63447a95b",
+      "result_sha256": "04e4d1da108c2688c3136cd88c3f3e04d31680e3f56fe7c88229876287dedf88"
+    },
+    {
+      "job_id": "multi30k_seed42_javascript",
+      "mrr_percent_exact": 57.70252029091721,
+      "ranks_sha256": "aaa06a642f4a8c0934e1d9abec16d14d69251a1a93083bc7dc9775421b6783fe",
+      "result_sha256": "5e5c2dd1ca8b910a356f25829e020414a9098505c928cfe5fd78a253126c26e0"
+    },
+    {
+      "job_id": "mono5k_seed87_javascript",
+      "mrr_percent_exact": 57.203564906465644,
+      "ranks_sha256": "906f5e1b999fc5760b4a465dd88627476b790a02d8bb24661465d854b12fc038",
+      "result_sha256": "a94c4d4c0170c22026ec8b44c2b3dee62cf1a59c885439e2fbb761a16d382986"
+    },
+    {
+      "job_id": "multi5k_seed87_javascript",
+      "mrr_percent_exact": 56.80538300973777,
+      "ranks_sha256": "7b43fcef097879eba7379b886351a2de6e3132608e36bfd531a02efaba69d473",
+      "result_sha256": "9b41eda7497272720e7da16e56d8ce54ebc0e59e1e9bfc6ae9fc5a9608f55391"
+    },
+    {
+      "job_id": "multi30k_seed87_javascript",
+      "mrr_percent_exact": 57.59608825882177,
+      "ranks_sha256": "06ae41029e93564f0bac4019a3b980487dbdb8c08530c2335562cbc3ba0de5b4",
+      "result_sha256": "0855fd4a0322192f2b339f6c1480524f321286c12f330f6292a5186533a101d0"
+    }
+  ],
+  "frozen_worker_sha256": "c34b8666779f316c540453823ef4e50e30823b1f84eda2d1ad9f817ee130e22b",
+  "language": "javascript",
+  "n_queries": 8253,
+  "pool_sha256": "03b781900ae5a28820068392fcbd7ee0bc37f11b841d077ef18286b644f3446d",
+  "status": "PASS",
+  "test_accessed": false
+}
