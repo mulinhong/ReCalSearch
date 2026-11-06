@@ -1,6 +1,6 @@
 # Reproduction notes
 
-This public source-and-evidence release accompanies the ReCalSearch manuscript prepared for submission to the Journal of Systems and Software (JSS). The definitive coverage table is [Public reproduction scope](REPRODUCTION_SCOPE.md).
+This public source-and-evidence release accompanies the ReCalSearch manuscript prepared for submission to the Expert Systems with Applications (ESWA). The definitive coverage table is [Public reproduction scope](REPRODUCTION_SCOPE.md).
 
 ## Self-contained statistical replay
 

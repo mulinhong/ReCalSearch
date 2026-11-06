@@ -1,6 +1,6 @@
 # Source coverage and exclusions
 
-For the JSS manuscript, this repository provides implementation sources and frozen statistical materials. See [Public reproduction scope](REPRODUCTION_SCOPE.md) for the distinction between self-contained statistical replay, archived summaries, and full experiment reruns.
+For the ESWA manuscript, this repository provides implementation sources and frozen statistical materials. See [Public reproduction scope](REPRODUCTION_SCOPE.md) for the distinction between self-contained statistical replay, archived summaries, and full experiment reruns.
 
 ## Included original sources
 

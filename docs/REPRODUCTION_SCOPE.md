@@ -1,6 +1,6 @@
 # Public reproduction scope
 
-The ReCalSearch manuscript is prepared for submission to the Journal of Systems and Software (JSS). The repository is publicly accessible at https://github.com/mulinhong/ReCalSearch.
+The ReCalSearch manuscript is prepared for submission to the Expert Systems with Applications (ESWA). The repository is publicly accessible at https://github.com/mulinhong/ReCalSearch.
 
 ## Shared availability statement
 

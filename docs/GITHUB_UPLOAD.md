@@ -1,6 +1,6 @@
 # Public repository access and updates
 
-The reviewed ReCalSearch package is now public at https://github.com/mulinhong/ReCalSearch. It is independent of the author's Work2 repository and accompanies the manuscript prepared for submission to the Journal of Systems and Software (JSS).
+The reviewed ReCalSearch package is now public at https://github.com/mulinhong/ReCalSearch. It is independent of the author's Work2 repository and accompanies the manuscript prepared for submission to the Expert Systems with Applications (ESWA).
 
 ```bash
 git clone https://github.com/mulinhong/ReCalSearch.git

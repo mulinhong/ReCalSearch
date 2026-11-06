@@ -223,7 +223,7 @@
     "tools/verify_release.py": "4d52adb741ff6da5a4441cc8e7907e3c0b11be20861e749740b31ec11b1f5928"
   },
   "notes": "Original reviewed-package provenance and preserved-file hashes are retained. Current public reproduction coverage is described in docs/REPRODUCTION_SCOPE.md.",
-  "target_journal": "Journal of Systems and Software (JSS)",
+  "target_journal": "Expert Systems with Applications (ESWA)",
   "repository_url": "https://github.com/mulinhong/ReCalSearch",
   "reproduction_scope": {
     "self_contained_statistical_replay": "Nomic Direct versus ReCalSearch paired bootstrap from the twelve bundled six-language rank arrays",

@@ -1,6 +1,6 @@
 # ReCalSearch — Retriever-Aligned Code LLM Verification for Cost-Aware Neural Code Search
 
-This public repository accompanies the ReCalSearch manuscript prepared for submission to the **Journal of Systems and Software (JSS)**. It provides implementation sources, experiment scripts, frozen statistical summaries, and six-language paired Nomic/ReCalSearch rank arrays.
+This public repository accompanies the ReCalSearch manuscript prepared for submission to the **Expert Systems with Applications (ESWA)**. It provides implementation sources, experiment scripts, frozen statistical summaries, and six-language paired Nomic/ReCalSearch rank arrays.
 
 The release supports self-contained CPU statistical replay of the Nomic--ReCalSearch paired bootstrap confidence intervals. Full training and inference reruns require external datasets, model weights or adapters, upstream dependencies, experiment-specific inputs, and path configuration. The public package does not contain the per-query inputs needed to recompute the crossover or CodeRankLLM bootstrap intervals. See [Reproduction scope](docs/REPRODUCTION_SCOPE.md) for the exact coverage.
 
